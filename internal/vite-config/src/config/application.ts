@@ -48,12 +48,12 @@ function defineApplicationConfig(defineOptions: DefineOptions = {}) {
           // @/xxxx => src/xxxx
           {
             find: /@\//,
-            replacement: pathResolve('src') + '/',
+            replacement: pathResolve('src') + pathResolve('vue-vben-admin')+pathResolve('src') ,
           },
           // #/xxxx => types/xxxx
           {
             find: /#\//,
-            replacement: pathResolve('types') + '/',
+            replacement: pathResolve('src')+ pathResolve('vue-vben-admin') +pathResolve('types') ,
           },
         ],
       },
