@@ -3,11 +3,11 @@ import { resolve } from 'node:path';
 import dayjs from 'dayjs';
 import { readPackageJSON } from 'pkg-types';
 import { defineConfig, loadEnv, mergeConfig, type UserConfig } from 'vite';
-
+import vue from '@vitejs/plugin-vue';
 import { createPlugins } from '../plugins';
 import { generateModifyVars } from '../utils/modifyVars';
 import { commonConfig } from './common';
-
+import dts from 'vite-plugin-dts';
 interface DefineOptions {
   overrides?: UserConfig;
   options?: {
@@ -105,5 +105,89 @@ async function createDefineData(root: string) {
     return {};
   }
 }
+function defineApplicationConfigZp(defineOptions: DefineOptions = {}) {
+  return defineConfig(async ({ command, mode }) => {
+    const root = process.cwd();
 
-export { defineApplicationConfig };
+    const defineData = await createDefineData(root);
+ 
+    const pathResolve = (pathname: string) => resolve(root, '.', pathname);
+    const applicationConfig: UserConfig = {
+      base: "./",
+      resolve: {
+        alias: [
+          {
+            find: 'vue-i18n',
+            replacement: 'vue-i18n/dist/vue-i18n.cjs.js',
+          },
+          // @/xxxx => src/xxxx
+          {
+            find: /@\//,
+            replacement: pathResolve('src') + '/',
+          },
+          // #/xxxx => types/xxxx
+          {
+            find: /#\//,
+            replacement: pathResolve('types') + '/',
+          },
+        ],
+      },
+      define: defineData,
+      
+      build: {
+        lib: {
+          entry: './src/main',
+          name: 'BundleZp',
+          fileName: 'bundleZp',
+          
+        },
+        
+        sourcemap: true,
+        outDir: 'distp', // 指定输出路径，要和库的包区分开
+        assetsDir: 'static/img/', // 指定生成静态资源的存放路径
+        rollupOptions: {
+          
+          external: ['vue', 'virtual:svg-icons-names','uno.css','virtual:svg-icons-register','ant-design-vue'],
+          output: [{
+            chunkFileNames: 'static1/chunk/[name]-[hash].js',
+            entryFileNames: 'static1/entry/[name]-[hash].js',
+            assetFileNames: 'static1/[ext]/[name]-[hash].[ext]',
+            name: 'name1/[ext]/[name]-[hash].[ext]',
+            globals: {
+              vue: 'Vue',
+            },
+          },{
+            chunkFileNames: 'main/chunk/[name]-[hash].js',
+            entryFileNames: 'main/entry/[name].js',
+            assetFileNames: 'main/[ext]/[name]-[hash].[ext]',
+            name: 'main/[ext]/[name]-[hash].[ext]',
+            globals: {
+              vue: 'Vue',
+            },
+            
+          }],
+        },
+      },
+
+      css: {
+        preprocessorOptions: {
+          less: {
+            modifyVars: generateModifyVars(),
+            javascriptEnabled: true,
+          },
+        },
+      },
+      // plugins,
+      plugins: [
+        vue(),
+        dts({ include: './src/components' ,insertTypesEntry:true,outDir:"distp/main/entry"}),
+      ],
+    };
+
+    // const mergedConfig = applicationConfig;
+
+    // return mergeConfig(mergedConfig, overrides);
+    return applicationConfig;
+  });
+}
+export { defineApplicationConfig, defineApplicationConfigZp };

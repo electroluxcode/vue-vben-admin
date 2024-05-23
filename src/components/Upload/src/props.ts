@@ -91,6 +91,12 @@ export const basicProps = {
   },
   // support xxx.xxx.xx
   resultField: propTypes.string.def(''),
+
+  // support xxx.xxx.xx
+  formModel: {
+    type: Object as PropType<SortableOptions>,
+    default: () => ({}),
+  },
 };
 
 export const uploadContainerProps = {

@@ -17,6 +17,7 @@
   },
   "type": "module",
   "scripts": {
+    "build:components": "vite build --config components.config.ts cross-env NODE_OPTIONS=--max-old-space-size=8192 --mode components",
     "bootstrap": "pnpm install",
     "build": "cross-env NODE_ENV=production NODE_OPTIONS=--max-old-space-size=8192 pnpm vite build",
     "build:analyze": "cross-env NODE_OPTIONS=--max-old-space-size=8192 pnpm vite build --mode analyze",
@@ -130,6 +131,7 @@
     "@vben/stylelint-config": "workspace:*",
     "@vben/ts-config": "workspace:*",
     "@vben/types": "workspace:*",
+    "@vben/components-config": "workspace:*",
     "@vben/vite-config": "workspace:*",
     "@vue/compiler-sfc": "^3.4.25",
     "@vue/test-utils": "^2.4.5",
