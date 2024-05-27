@@ -1,0 +1,3 @@
+[submodule "src/vben-admin-sync"]
+	path = src/vben-admin-sync
+	url = https://github.com/vbenjs/vue-vben-admin.git
