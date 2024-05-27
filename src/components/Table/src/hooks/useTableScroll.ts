@@ -1,17 +1,17 @@
 import type { BasicTableProps, TableRowSelection, BasicColumn } from '../types/table';
 import { Ref, ComputedRef, ref, computed, unref, nextTick, watch } from 'vue';
-import { getViewportOffset } from '@/utils/domUtils';
-import { isBoolean } from '@/utils/is';
+import { getViewportOffset } from '@project/utils/domUtils';
+import { isBoolean } from '@project/utils/is';
 import { useWindowSizeFn, onMountedOrActivated } from '@vben/hooks';
-import { useModalContext } from '@/components/Modal';
+import { useModalContext } from '@project/components/Modal';
 import { useDebounceFn, promiseTimeout } from '@vueuse/core';
 
 import {
   footerHeight as layoutFooterHeight,
   layoutMultipleHeadePlaceholderTime,
-} from '@/settings/designSetting';
+} from '@project/settings/designSetting';
 
-import { useRootSetting } from '@/hooks/setting/useRootSetting';
+import { useRootSetting } from '@project/hooks/setting/useRootSetting';
 
 const { getShowFooter, getFullContent } = useRootSetting();
 

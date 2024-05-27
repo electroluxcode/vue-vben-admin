@@ -9,22 +9,22 @@
 <script lang="ts" setup>
   import { computed, unref } from 'vue';
 
-  import { useRootSetting } from '@/hooks/setting/useRootSetting';
-  import { useHeaderSetting } from '@/hooks/setting/useHeaderSetting';
-  import { useDesign } from '@/hooks/web/useDesign';
-  import { useUserStoreWithOut } from '@/store/modules/user';
+  import { useRootSetting } from '@project/hooks/setting/useRootSetting';
+  import { useHeaderSetting } from '@project/hooks/setting/useHeaderSetting';
+  import { useDesign } from '@project/hooks/web/useDesign';
+  import { useUserStoreWithOut } from '@project/store/modules/user';
 
-  import { SettingButtonPositionEnum } from '@/enums/appEnum';
-  import { createAsyncComponent } from '@/utils/factory/createAsyncComponent';
+  import { SettingButtonPositionEnum } from '@project/enums/appEnum';
+  import { createAsyncComponent } from '@project/utils/factory/createAsyncComponent';
 
-  import SessionTimeoutLogin from '@/views/sys/login/SessionTimeoutLogin.vue';
+  import SessionTimeoutLogin from '@project/views/sys/login/SessionTimeoutLogin.vue';
 
-  import { useMultipleTabSetting } from '@/hooks/setting/useMultipleTabSetting';
+  import { useMultipleTabSetting } from '@project/hooks/setting/useMultipleTabSetting';
 
   defineOptions({ name: 'LayoutFeatures' });
 
-  const LayoutLockPage = createAsyncComponent(() => import('@/views/sys/lock/index.vue'));
-  const SettingDrawer = createAsyncComponent(() => import('@/layouts/default/setting/index.vue'));
+  const LayoutLockPage = createAsyncComponent(() => import('@project/views/sys/lock/index.vue'));
+  const SettingDrawer = createAsyncComponent(() => import('@project/layouts/default/setting/index.vue'));
 
   const { getShowSettingButton, getSettingButtonPosition, getFullContent } = useRootSetting();
   const userStore = useUserStoreWithOut();

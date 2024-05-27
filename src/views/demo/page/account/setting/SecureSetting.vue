@@ -23,7 +23,7 @@
   </CollapseContainer>
 </template>
 <script lang="ts" setup>
-  import { CollapseContainer } from '@/components/Container';
+  import { CollapseContainer } from '@project/components/Container';
   import { List } from 'ant-design-vue';
   import { secureSettingList } from './data';
 

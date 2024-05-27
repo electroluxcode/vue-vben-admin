@@ -1,12 +1,12 @@
 import { toRaw, ref, nextTick } from 'vue';
 import type { RouteLocationNormalized } from 'vue-router';
-import { useDesign } from '@/hooks/web/useDesign';
-import { useSortable } from '@/hooks/web/useSortable';
-import { useMultipleTabStore } from '@/store/modules/multipleTab';
-import { isNil } from '@/utils/is';
-import projectSetting from '@/settings/projectSetting';
+import { useDesign } from '@project/hooks/web/useDesign';
+import { useSortable } from '@project/hooks/web/useSortable';
+import { useMultipleTabStore } from '@project/store/modules/multipleTab';
+import { isNil } from '@project/utils/is';
+import projectSetting from '@project/settings/projectSetting';
 import { useRouter } from 'vue-router';
-import { useI18n } from '@/hooks/web/useI18n';
+import { useI18n } from '@project/hooks/web/useI18n';
 
 const { t } = useI18n();
 

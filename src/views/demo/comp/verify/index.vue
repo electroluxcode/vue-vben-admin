@@ -52,10 +52,10 @@
 </template>
 <script lang="ts" setup>
   import { ref } from 'vue';
-  import { BasicDragVerify, DragVerifyActionType, PassingData } from '@/components/Verify';
-  import { useMessage } from '@/hooks/web/useMessage';
+  import { BasicDragVerify, DragVerifyActionType, PassingData } from '@project/components/Verify';
+  import { useMessage } from '@project/hooks/web/useMessage';
   import { BugOutlined, RightOutlined } from '@ant-design/icons-vue';
-  import { PageWrapper } from '@/components/Page';
+  import { PageWrapper } from '@project/components/Page';
   import { type Nullable } from '@vben/types';
 
   const { createMessage } = useMessage();

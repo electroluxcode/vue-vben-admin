@@ -35,14 +35,14 @@
   import { ref, computed, watch, unref, nextTick, getCurrentInstance } from 'vue';
   import type { CSSProperties, Ref } from 'vue';
   import { Drawer } from 'ant-design-vue';
-  import { useI18n } from '@/hooks/web/useI18n';
-  import { isFunction, isNumber } from '@/utils/is';
-  import { deepMerge } from '@/utils';
+  import { useI18n } from '@project/hooks/web/useI18n';
+  import { isFunction, isNumber } from '@project/utils/is';
+  import { deepMerge } from '@project/utils';
   import DrawerFooter from './components/DrawerFooter.vue';
   import DrawerHeader from './components/DrawerHeader.vue';
-  import { ScrollContainer } from '@/components/Container';
+  import { ScrollContainer } from '@project/components/Container';
   import { basicProps } from './props';
-  import { useDesign } from '@/hooks/web/useDesign';
+  import { useDesign } from '@project/hooks/web/useDesign';
   import { useAttrs } from '@vben/hooks';
 
   defineOptions({ inheritAttrs: false });

@@ -11,10 +11,10 @@
 </template>
 <script lang="ts" setup>
   import { ref, nextTick } from 'vue';
-  import { BasicModal } from '@/components/Modal';
-  import { BasicTable, ColumnChangeParam, useTable } from '@/components/Table';
+  import { BasicModal } from '@project/components/Modal';
+  import { BasicTable, ColumnChangeParam, useTable } from '@project/components/Table';
   import { getBasicColumns } from '../../table/tableData';
-  import { demoListApi } from '@/api/demo/table';
+  import { demoListApi } from '@project/api/demo/table';
 
   const [registerTable] = useTable({
     canResize: true,

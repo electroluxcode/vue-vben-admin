@@ -23,7 +23,7 @@
   </CollapseContainer>
 </template>
 <script lang="ts" setup>
-  import { CollapseContainer } from '@/components/Container';
+  import { CollapseContainer } from '@project/components/Container';
   import { List, Switch } from 'ant-design-vue';
   import { msgNotifyList } from './data';
 

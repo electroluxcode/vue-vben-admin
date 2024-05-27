@@ -9,10 +9,10 @@
   </PageWrapper>
 </template>
 <script lang="ts" setup>
-  import { CardList } from '@/components/CardList';
-  import { PageWrapper } from '@/components/Page';
-  import { demoListApi } from '@/api/demo/table';
-  import { useMessage } from '@/hooks/web/useMessage';
+  import { CardList } from '@project/components/CardList';
+  import { PageWrapper } from '@project/components/Page';
+  import { demoListApi } from '@project/api/demo/table';
+  import { useMessage } from '@project/hooks/web/useMessage';
 
   const { notification } = useMessage();
   // 请求api时附带参数

@@ -5,10 +5,10 @@
 </template>
 <script lang="ts" setup>
   import type { PropType } from 'vue';
-  import type { ErrorLogInfo } from '#/store';
-  import { BasicModal } from '@/components/Modal';
-  import { Description, useDescription } from '@/components/Description';
-  import { useI18n } from '@/hooks/web/useI18n';
+  import type { ErrorLogInfo } from '@projectType/store';
+  import { BasicModal } from '@project/components/Modal';
+  import { Description, useDescription } from '@project/components/Description';
+  import { useI18n } from '@project/hooks/web/useI18n';
   import { getDescSchema } from './data';
 
   defineProps({

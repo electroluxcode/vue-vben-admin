@@ -16,9 +16,9 @@
   } from 'vue';
   import Vditor from 'vditor';
   import 'vditor/dist/index.css';
-  import { useLocale } from '@/locales/useLocale';
+  import { useLocale } from '@project/locales/useLocale';
   import { useModalContext } from '../../Modal';
-  import { useRootSetting } from '@/hooks/setting/useRootSetting';
+  import { useRootSetting } from '@project/hooks/setting/useRootSetting';
   import { onMountedOrActivated } from '@vben/hooks';
   import { getTheme } from './getTheme';
 

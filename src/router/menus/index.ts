@@ -1,13 +1,13 @@
-import type { Menu, MenuModule } from '@/router/types';
+import type { Menu, MenuModule } from '@project/router/types';
 import type { RouteRecordNormalized } from 'vue-router';
 
-import { useAppStoreWithOut } from '@/store/modules/app';
-import { usePermissionStore } from '@/store/modules/permission';
-import { transformMenuModule, getAllParentPath } from '@/router/helper/menuHelper';
-import { filter } from '@/utils/helper/treeHelper';
-import { isHttpUrl } from '@/utils/is';
-import { router } from '@/router';
-import { PermissionModeEnum } from '@/enums/appEnum';
+import { useAppStoreWithOut } from '@project/store/modules/app';
+import { usePermissionStore } from '@project/store/modules/permission';
+import { transformMenuModule, getAllParentPath } from '@project/router/helper/menuHelper';
+import { filter } from '@project/utils/helper/treeHelper';
+import { isHttpUrl } from '@project/utils/is';
+import { router } from '@project/router';
+import { PermissionModeEnum } from '@project/enums/appEnum';
 import { pathToRegexp } from 'path-to-regexp';
 
 const modules = import.meta.glob('../routes/modules/**/*.ts', { eager: true });

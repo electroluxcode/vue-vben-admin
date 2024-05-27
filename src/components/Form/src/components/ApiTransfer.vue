@@ -15,9 +15,9 @@
 <script lang="ts" setup>
   import { computed, watch, ref, unref, watchEffect, PropType } from 'vue';
   import { Transfer } from 'ant-design-vue';
-  import { isFunction } from '@/utils/is';
+  import { isFunction } from '@project/utils/is';
   import { get, omit } from 'lodash-es';
-  import { propTypes } from '@/utils/propTypes';
+  import { propTypes } from '@project/utils/propTypes';
   import { TransferDirection, TransferItem } from 'ant-design-vue/lib/transfer';
 
   defineOptions({ name: 'ApiTransfer' });

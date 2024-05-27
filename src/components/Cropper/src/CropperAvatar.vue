@@ -32,12 +32,12 @@
 <script lang="ts" setup>
   import { computed, CSSProperties, unref, ref, watchEffect, watch, PropType } from 'vue';
   import CropperModal from './CropperModal.vue';
-  import { useDesign } from '@/hooks/web/useDesign';
-  import { useModal } from '@/components/Modal';
-  import { useMessage } from '@/hooks/web/useMessage';
-  import { useI18n } from '@/hooks/web/useI18n';
-  import type { ButtonProps } from '@/components/Button';
-  import Icon from '@/components/Icon/Icon.vue';
+  import { useDesign } from '@project/hooks/web/useDesign';
+  import { useModal } from '@project/components/Modal';
+  import { useMessage } from '@project/hooks/web/useMessage';
+  import { useI18n } from '@project/hooks/web/useI18n';
+  import type { ButtonProps } from '@project/components/Button';
+  import Icon from '@project/components/Icon/Icon.vue';
 
   defineOptions({ name: 'CropperAvatar' });
 

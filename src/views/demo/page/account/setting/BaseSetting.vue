@@ -22,18 +22,18 @@
   </CollapseContainer>
 </template>
 <script lang="ts" setup>
-  import { CollapseContainer } from '@/components/Container';
-  import { CropperAvatar } from '@/components/Cropper';
-  import { BasicForm, useForm } from '@/components/Form';
+  import { CollapseContainer } from '@project/components/Container';
+  import { CropperAvatar } from '@project/components/Cropper';
+  import { BasicForm, useForm } from '@project/components/Form';
   import { Col, Row } from 'ant-design-vue';
   import { computed, onMounted } from 'vue';
 
-  import { useMessage } from '@/hooks/web/useMessage';
+  import { useMessage } from '@project/hooks/web/useMessage';
 
-  import { accountInfoApi } from '@/api/demo/account';
-  import { uploadApi } from '@/api/sys/upload';
-  import headerImg from '@/assets/images/header.jpg';
-  import { useUserStore } from '@/store/modules/user';
+  import { accountInfoApi } from '@project/api/demo/account';
+  import { uploadApi } from '@project/api/sys/upload';
+  import headerImg from '@project/assets/images/header.jpg';
+  import { useUserStore } from '@project/store/modules/user';
   import { baseSetschemas } from './data';
 
   const { createMessage } = useMessage();

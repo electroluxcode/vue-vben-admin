@@ -1,8 +1,8 @@
 <script lang="tsx">
   import { fileListProps } from '../props';
-  import { isFunction, isDef } from '@/utils/is';
-  import { useSortable } from '@/hooks/web/useSortable';
-  import { useModalContext } from '@/components/Modal/src/hooks/useModalContext';
+  import { isFunction, isDef } from '@project/utils/is';
+  import { useSortable } from '@project/hooks/web/useSortable';
+  import { useModalContext } from '@project/components/Modal/src/hooks/useModalContext';
   import { defineComponent, CSSProperties, watch, nextTick, ref, onMounted } from 'vue';
   import { FileBasicColumn } from '../types/typing';
 

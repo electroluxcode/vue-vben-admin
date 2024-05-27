@@ -1,7 +1,7 @@
 <script lang="tsx">
-  import { CollapseTransition } from '@/components/Transition';
-  import { useDesign } from '@/hooks/web/useDesign';
-  import { triggerWindowResize } from '@/utils/event';
+  import { CollapseTransition } from '@project/components/Transition';
+  import { useDesign } from '@project/hooks/web/useDesign';
+  import { triggerWindowResize } from '@project/utils/event';
   import { useTimeoutFn } from '@vben/hooks';
   import { Skeleton } from 'ant-design-vue';
   import { isNil } from 'lodash-es';

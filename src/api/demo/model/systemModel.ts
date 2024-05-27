@@ -1,4 +1,4 @@
-import { BasicPageParams, BasicFetchResult } from '@/api/model/baseModel';
+import { BasicPageParams, BasicFetchResult } from '@project/api/model/baseModel';
 
 export type AccountParams = BasicPageParams & {
   account?: string;

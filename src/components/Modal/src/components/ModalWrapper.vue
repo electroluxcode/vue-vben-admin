@@ -10,7 +10,7 @@
   import { computed, ref, watchEffect, unref, watch, onMounted, nextTick, onUnmounted } from 'vue';
   import { useWindowSizeFn } from '@vben/hooks';
   import { type AnyFunction } from '@vben/types';
-  import { ScrollContainer } from '@/components/Container';
+  import { ScrollContainer } from '@project/components/Container';
   import { createModalContext } from '../hooks/useModalContext';
   import { useMutationObserver } from '@vueuse/core';
 

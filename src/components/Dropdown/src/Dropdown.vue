@@ -41,9 +41,9 @@
   import { type Recordable } from '@vben/types';
   import { type DropMenu } from './typing';
   import { Dropdown, Menu, Popconfirm } from 'ant-design-vue';
-  import Icon from '@/components/Icon/Icon.vue';
+  import Icon from '@project/components/Icon/Icon.vue';
   import { omit } from 'lodash-es';
-  import { isFunction } from '@/utils/is';
+  import { isFunction } from '@project/utils/is';
 
   const ADropdown = Dropdown;
   const AMenu = Menu;

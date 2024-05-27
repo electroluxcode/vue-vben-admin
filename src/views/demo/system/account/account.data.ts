@@ -1,5 +1,5 @@
-import { getAllRoleList, isAccountExist } from '@/api/demo/system';
-import { BasicColumn, FormSchema } from '@/components/Table';
+import { getAllRoleList, isAccountExist } from '@project/api/demo/system';
+import { BasicColumn, FormSchema } from '@project/components/Table';
 
 /**
  * transform mock data

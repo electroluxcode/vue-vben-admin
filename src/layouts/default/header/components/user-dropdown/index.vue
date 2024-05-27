@@ -45,16 +45,16 @@
   import { Dropdown, Menu } from 'ant-design-vue';
   import type { MenuInfo } from 'ant-design-vue/lib/menu/src/interface';
   import { computed } from 'vue';
-  import { DOC_URL } from '@/settings/siteSetting';
-  import { useUserStore } from '@/store/modules/user';
-  import { useHeaderSetting } from '@/hooks/setting/useHeaderSetting';
-  import { useI18n } from '@/hooks/web/useI18n';
-  import { useDesign } from '@/hooks/web/useDesign';
-  import { useModal } from '@/components/Modal';
-  import headerImg from '@/assets/images/header.jpg';
-  import { propTypes } from '@/utils/propTypes';
-  import { openWindow } from '@/utils';
-  import { createAsyncComponent } from '@/utils/factory/createAsyncComponent';
+  import { DOC_URL } from '@project/settings/siteSetting';
+  import { useUserStore } from '@project/store/modules/user';
+  import { useHeaderSetting } from '@project/hooks/setting/useHeaderSetting';
+  import { useI18n } from '@project/hooks/web/useI18n';
+  import { useDesign } from '@project/hooks/web/useDesign';
+  import { useModal } from '@project/components/Modal';
+  import headerImg from '@project/assets/images/header.jpg';
+  import { propTypes } from '@project/utils/propTypes';
+  import { openWindow } from '@project/utils';
+  import { createAsyncComponent } from '@project/utils/factory/createAsyncComponent';
 
   type MenuEvent = 'logout' | 'doc' | 'lock' | 'api';
 

@@ -84,10 +84,10 @@
     TableOutlined,
   } from '@ant-design/icons-vue';
   import { List, Card, Image, Typography, Tooltip, Slider, Avatar } from 'ant-design-vue';
-  import { Dropdown } from '@/components/Dropdown';
-  import { BasicForm, useForm } from '@/components/Form';
-  import { propTypes } from '@/utils/propTypes';
-  import { isFunction } from '@/utils/is';
+  import { Dropdown } from '@project/components/Dropdown';
+  import { BasicForm, useForm } from '@project/components/Form';
+  import { propTypes } from '@project/utils/propTypes';
+  import { isFunction } from '@project/utils/is';
   import { useSlider, grid } from './data';
 
   const ListItem = List.Item;

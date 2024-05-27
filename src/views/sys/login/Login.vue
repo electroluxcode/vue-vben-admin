@@ -48,11 +48,11 @@
   </div>
 </template>
 <script lang="ts" setup>
-  import { AppDarkModeToggle, AppLocalePicker, AppLogo } from '@/components/Application';
-  import { useGlobSetting } from '@/hooks/setting';
-  import { useDesign } from '@/hooks/web/useDesign';
-  import { useI18n } from '@/hooks/web/useI18n';
-  import { useLocaleStore } from '@/store/modules/locale';
+  import { AppDarkModeToggle, AppLocalePicker, AppLogo } from '@project/components/Application';
+  import { useGlobSetting } from '@project/hooks/setting';
+  import { useDesign } from '@project/hooks/web/useDesign';
+  import { useI18n } from '@project/hooks/web/useI18n';
+  import { useLocaleStore } from '@project/store/modules/locale';
   import { computed } from 'vue';
   import ForgetPasswordForm from './ForgetPasswordForm.vue';
   import LoginForm from './LoginForm.vue';
@@ -84,7 +84,7 @@
       background-color: @dark-bg;
 
       &::before {
-        background-image: url('@/assets/svg/login-bg-dark.svg');
+        background-image: url('@project/assets/svg/login-bg-dark.svg');
       }
 
       .ant-input,
@@ -131,7 +131,7 @@
       width: 100%;
       height: 100%;
       margin-left: -48%;
-      background-image: url('@/assets/svg/login-bg.svg');
+      background-image: url('@project/assets/svg/login-bg.svg');
       background-repeat: no-repeat;
       background-position: 100%;
       background-size: auto 100%;

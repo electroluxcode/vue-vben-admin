@@ -68,10 +68,10 @@
 </template>
 <script lang="ts" setup>
   import { nextTick, ref, unref } from 'vue';
-  import { BasicForm, FormSchema, FormActionType, FormProps } from '@/components/Form';
-  import { CollapseContainer } from '@/components/Container';
-  import { useMessage } from '@/hooks/web/useMessage';
-  import { PageWrapper } from '@/components/Page';
+  import { BasicForm, FormSchema, FormActionType, FormProps } from '@project/components/Form';
+  import { CollapseContainer } from '@project/components/Container';
+  import { useMessage } from '@project/hooks/web/useMessage';
+  import { PageWrapper } from '@project/components/Page';
   import { type Nullable } from '@vben/types';
 
   const schemas: FormSchema[] = [

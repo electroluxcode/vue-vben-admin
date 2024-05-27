@@ -5,8 +5,8 @@
 </template>
 
 <script lang="ts" setup>
-  import { PageWrapper } from '@/components/Page';
-  import { useTabs } from '@/hooks/web/useTabs';
+  import { PageWrapper } from '@project/components/Page';
+  import { useTabs } from '@project/hooks/web/useTabs';
   import { useRoute } from 'vue-router';
 
   defineOptions({ name: 'TabDetail' });

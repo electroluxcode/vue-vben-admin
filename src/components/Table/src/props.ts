@@ -10,10 +10,10 @@ import type {
   SizeType,
   BasicTableProps,
 } from './types/table';
-import type { FormProps } from '@/components/Form';
+import type { FormProps } from '@project/components/Form';
 
 import { DEFAULT_FILTER_FN, DEFAULT_SORT_FN, FETCH_SETTING, DEFAULT_SIZE } from './const';
-import { propTypes } from '@/utils/propTypes';
+import { propTypes } from '@project/utils/propTypes';
 import type { Key } from 'ant-design-vue/lib/table/interface';
 
 export const basicProps = {

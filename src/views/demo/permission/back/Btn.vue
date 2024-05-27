@@ -61,13 +61,13 @@
   import { computed } from 'vue';
   import { Alert, Divider } from 'ant-design-vue';
   import CurrentPermissionMode from '../CurrentPermissionMode.vue';
-  import { usePermission } from '@/hooks/web/usePermission';
-  import { Authority } from '@/components/Authority';
-  import { usePermissionStore } from '@/store/modules/permission';
-  import { PermissionModeEnum } from '@/enums/appEnum';
-  import { PageWrapper } from '@/components/Page';
-  import { useAppStore } from '@/store/modules/app';
-  import { useUserStore } from '@/store/modules/user';
+  import { usePermission } from '@project/hooks/web/usePermission';
+  import { Authority } from '@project/components/Authority';
+  import { usePermissionStore } from '@project/store/modules/permission';
+  import { PermissionModeEnum } from '@project/enums/appEnum';
+  import { PageWrapper } from '@project/components/Page';
+  import { useAppStore } from '@project/store/modules/app';
+  import { useUserStore } from '@project/store/modules/user';
 
   const { hasPermission } = usePermission();
   const permissionStore = usePermissionStore();

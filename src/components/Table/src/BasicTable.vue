@@ -47,8 +47,8 @@
   } from './types/table';
   import { ref, computed, unref, toRaw, inject, watch, useAttrs, useSlots } from 'vue';
   import { Table } from 'ant-design-vue';
-  import { BasicForm, useForm } from '@/components/Form';
-  import { PageWrapperFixedHeightKey } from '@/enums/pageEnum';
+  import { BasicForm, useForm } from '@project/components/Form';
+  import { PageWrapperFixedHeightKey } from '@project/enums/pageEnum';
   import HeaderCell from './components/HeaderCell.vue';
   import { InnerHandlers, InnerMethods } from './types/table';
   import { usePagination } from './hooks/usePagination';
@@ -65,11 +65,11 @@
   import { createTableContext } from './hooks/useTableContext';
   import { useTableFooter } from './hooks/useTableFooter';
   import { useTableForm } from './hooks/useTableForm';
-  import { useDesign } from '@/hooks/web/useDesign';
+  import { useDesign } from '@project/hooks/web/useDesign';
   import { omit, debounce } from 'lodash-es';
   import { useElementSize } from '@vueuse/core';
   import { basicProps } from './props';
-  import { isFunction } from '@/utils/is';
+  import { isFunction } from '@project/utils/is';
 
   defineOptions({ name: 'BasicTable' });
 

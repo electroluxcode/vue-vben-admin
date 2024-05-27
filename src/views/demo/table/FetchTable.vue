@@ -9,11 +9,11 @@
   </PageWrapper>
 </template>
 <script lang="ts" setup>
-  import { BasicTable, useTable } from '@/components/Table';
+  import { BasicTable, useTable } from '@project/components/Table';
   import { getBasicColumns } from './tableData';
-  import { PageWrapper } from '@/components/Page';
+  import { PageWrapper } from '@project/components/Page';
 
-  import { demoListApi } from '@/api/demo/table';
+  import { demoListApi } from '@project/api/demo/table';
 
   const [registerTable, { reload }] = useTable({
     title: '远程加载示例',

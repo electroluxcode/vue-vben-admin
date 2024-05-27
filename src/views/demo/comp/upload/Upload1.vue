@@ -12,9 +12,9 @@
 
 <script setup lang="ts">
   import { Alert } from 'ant-design-vue';
-  import { BasicUpload } from '@/components/Upload';
-  import { useMessage } from '@/hooks/web/useMessage';
-  import { uploadApi } from '@/api/sys/upload';
+  import { BasicUpload } from '@project/components/Upload';
+  import { useMessage } from '@project/hooks/web/useMessage';
+  import { uploadApi } from '@project/api/sys/upload';
 
   const { createMessage } = useMessage();
   function handleChange(list: string[]) {

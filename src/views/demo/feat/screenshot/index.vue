@@ -18,7 +18,7 @@
   </PageWrapper>
 </template>
 <script lang="ts" setup>
-  import { PageWrapper } from '@/components/Page';
+  import { PageWrapper } from '@project/components/Page';
   import html2canvas from 'html2canvas';
   import { ref } from 'vue';
   import { Card, Col, Row } from 'ant-design-vue';

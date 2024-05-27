@@ -30,14 +30,14 @@
   import type { UploadFile, UploadProps } from 'ant-design-vue';
   import { Modal, Upload } from 'ant-design-vue';
   import { UploadRequestOption } from 'ant-design-vue/lib/vc-upload/interface';
-  import { useMessage } from '@/hooks/web/useMessage';
-  import { isArray, isFunction, isObject, isString } from '@/utils/is';
-  import { warn } from '@/utils/log';
-  import { useI18n } from '@/hooks/web/useI18n';
+  import { useMessage } from '@project/hooks/web/useMessage';
+  import { isArray, isFunction, isObject, isString } from '@project/utils/is';
+  import { warn } from '@project/utils/log';
+  import { useI18n } from '@project/hooks/web/useI18n';
   import { useUploadType } from '../hooks/useUpload';
   import { uploadContainerProps } from '../props';
   import { checkFileType } from '../helper';
-  import { UploadResultStatus } from '@/components/Upload/src/types/typing';
+  import { UploadResultStatus } from '@project/components/Upload/src/types/typing';
   import { get, omit } from 'lodash-es';
 
   defineOptions({ name: 'ImageUpload' });

@@ -1,14 +1,14 @@
 import type { RouteLocationRaw, Router } from 'vue-router';
 
-import { PageEnum } from '@/enums/pageEnum';
+import { PageEnum } from '@project/enums/pageEnum';
 import { unref } from 'vue';
 
 import { useRouter } from 'vue-router';
-import { REDIRECT_NAME } from '@/router/constant';
-import { isHttpUrl } from '@/utils/is';
-import { openWindow } from '@/utils';
+import { REDIRECT_NAME } from '@project/router/constant';
+import { isHttpUrl } from '@project/utils/is';
+import { openWindow } from '@project/utils';
 
-import { useMultipleTabStore } from '@/store/modules/multipleTab';
+import { useMultipleTabStore } from '@project/store/modules/multipleTab';
 
 export type PathAsPageEnum<T> = T extends { path: string } ? T & { path: PageEnum } : T;
 export type RouteLocationRawEx = PathAsPageEnum<RouteLocationRaw>;

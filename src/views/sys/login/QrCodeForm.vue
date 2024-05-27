@@ -18,8 +18,8 @@
   import { computed, unref } from 'vue';
   import LoginFormTitle from './LoginFormTitle.vue';
   import { Button, Divider } from 'ant-design-vue';
-  import { QrCode } from '@/components/Qrcode';
-  import { useI18n } from '@/hooks/web/useI18n';
+  import { QrCode } from '@project/components/Qrcode';
+  import { useI18n } from '@project/hooks/web/useI18n';
   import { useLoginState, LoginStateEnum } from './useLogin';
 
   const qrCodeUrl = 'https://vben.vvbin.cn/login';

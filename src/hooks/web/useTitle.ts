@@ -1,10 +1,10 @@
 import { watch, unref } from 'vue';
-import { useI18n } from '@/hooks/web/useI18n';
+import { useI18n } from '@project/hooks/web/useI18n';
 import { useTitle as usePageTitle } from '@vueuse/core';
-import { useGlobSetting } from '@/hooks/setting';
+import { useGlobSetting } from '@project/hooks/setting';
 import { useRouter } from 'vue-router';
-import { useLocaleStore } from '@/store/modules/locale';
-import { REDIRECT_NAME } from '@/router/constant';
+import { useLocaleStore } from '@project/store/modules/locale';
+import { REDIRECT_NAME } from '@project/router/constant';
 
 /**
  * Listening to page changes and dynamically changing site titles

@@ -7,10 +7,10 @@
   </BasicTable>
 </template>
 <script lang="ts" setup>
-  import { BasicTable, useTable } from '@/components/Table';
+  import { BasicTable, useTable } from '@project/components/Table';
   import { getBasicColumns, getFormConfig } from './tableData';
 
-  import { demoListApi } from '@/api/demo/table';
+  import { demoListApi } from '@project/api/demo/table';
 
   const [registerTable, { getForm }] = useTable({
     title: '开启搜索区域',

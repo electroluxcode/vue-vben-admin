@@ -1,17 +1,17 @@
 import type { Router, RouteLocationNormalized } from 'vue-router';
-import { useAppStoreWithOut } from '@/store/modules/app';
-import { useUserStoreWithOut } from '@/store/modules/user';
-import { useTransitionSetting } from '@/hooks/setting/useTransitionSetting';
-import { AxiosCanceler } from '@/utils/http/axios/axiosCancel';
+import { useAppStoreWithOut } from '@project/store/modules/app';
+import { useUserStoreWithOut } from '@project/store/modules/user';
+import { useTransitionSetting } from '@project/hooks/setting/useTransitionSetting';
+import { AxiosCanceler } from '@project/utils/http/axios/axiosCancel';
 import { Modal, notification } from 'ant-design-vue';
-import { warn } from '@/utils/log';
+import { warn } from '@project/utils/log';
 import { unref } from 'vue';
-import { prefixCls } from '@/settings/designSetting';
-import { setRouteChange } from '@/logics/mitt/routeChange';
+import { prefixCls } from '@project/settings/designSetting';
+import { setRouteChange } from '@project/logics/mitt/routeChange';
 import { createPermissionGuard } from './permissionGuard';
 import { createStateGuard } from './stateGuard';
 import nProgress from 'nprogress';
-import projectSetting from '@/settings/projectSetting';
+import projectSetting from '@project/settings/projectSetting';
 import { createParamMenuGuard } from './paramMenuGuard';
 
 // Don't change the order of creation
@@ -99,7 +99,7 @@ function createHttpGuard(router: Router) {
 // Routing switch back to the top
 function createScrollGuard(router: Router) {
   const isHash = (href: string) => {
-    return /^#/.test(href);
+    return /^@projectType/.test(href);
   };
 
   router.afterEach(async (to) => {

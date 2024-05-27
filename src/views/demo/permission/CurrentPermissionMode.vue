@@ -10,10 +10,10 @@
 </template>
 <script lang="ts" setup>
   import { computed } from 'vue';
-  import { useAppStore } from '@/store/modules/app';
-  import { PermissionModeEnum } from '@/enums/appEnum';
+  import { useAppStore } from '@project/store/modules/app';
+  import { PermissionModeEnum } from '@project/enums/appEnum';
   import { Divider } from 'ant-design-vue';
-  import { usePermission } from '@/hooks/web/usePermission';
+  import { usePermission } from '@project/hooks/web/usePermission';
 
   defineOptions({ name: 'CurrentPermissionMode' });
 

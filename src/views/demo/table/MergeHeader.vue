@@ -4,10 +4,10 @@
   </div>
 </template>
 <script lang="ts" setup>
-  import { BasicTable, useTable } from '@/components/Table';
+  import { BasicTable, useTable } from '@project/components/Table';
   import { getMergeHeaderColumns } from './tableData';
 
-  import { demoListApi } from '@/api/demo/table';
+  import { demoListApi } from '@project/api/demo/table';
 
   const [registerTable] = useTable({
     title: '合并单元格',

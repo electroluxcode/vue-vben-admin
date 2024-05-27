@@ -21,10 +21,10 @@
 <script lang="ts" setup>
   import { type PropType, ref, computed, unref, watch } from 'vue';
   import { Radio } from 'ant-design-vue';
-  import { isFunction } from '@/utils/is';
-  import { useRuleFormItem } from '@/hooks/component/useFormItem';
+  import { isFunction } from '@project/utils/is';
+  import { useRuleFormItem } from '@project/hooks/component/useFormItem';
   import { useAttrs } from '@vben/hooks';
-  import { propTypes } from '@/utils/propTypes';
+  import { propTypes } from '@project/utils/propTypes';
   import { get, omit, isEqual } from 'lodash-es';
 
   type OptionsItem = {

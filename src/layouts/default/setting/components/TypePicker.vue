@@ -22,7 +22,7 @@
   import type { PropType } from 'vue';
 
   import { Tooltip } from 'ant-design-vue';
-  import { useDesign } from '@/hooks/web/useDesign';
+  import { useDesign } from '@project/hooks/web/useDesign';
 
   import { menuTypeListEnum } from '../enum';
 

@@ -19,12 +19,12 @@
 </template>
 <script lang="ts" setup>
   import { Radio } from 'ant-design-vue';
-  import { useI18n } from '@/hooks/web/useI18n';
-  import { BasicModal, useModalInner } from '@/components/Modal';
-  import { BasicForm, useForm } from '@/components/Form';
+  import { useI18n } from '@project/hooks/web/useI18n';
+  import { BasicModal, useModalInner } from '@project/components/Modal';
+  import { BasicForm, useForm } from '@project/components/Form';
   import { ref } from 'vue';
-  import { useAppStore } from '@/store/modules/app';
-  import type { ApiAddress } from '#/store';
+  import { useAppStore } from '@project/store/modules/app';
+  import type { ApiAddress } from '@projectType/store';
 
   const appStore = useAppStore();
   const RadioGroup = Radio.Group;

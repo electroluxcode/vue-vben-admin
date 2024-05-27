@@ -15,10 +15,10 @@
 </template>
 <script lang="ts" setup>
   import type { ExportModalResult } from './typing';
-  import { BasicModal, useModalInner } from '@/components/Modal';
-  import { BasicForm, FormSchema, useForm } from '@/components/Form';
+  import { BasicModal, useModalInner } from '@project/components/Modal';
+  import { BasicForm, FormSchema, useForm } from '@project/components/Form';
 
-  import { useI18n } from '@/hooks/web/useI18n';
+  import { useI18n } from '@project/hooks/web/useI18n';
 
   const { t } = useI18n();
 

@@ -1,7 +1,7 @@
-import type { AppRouteModule } from '@/router/types';
+import type { AppRouteModule } from '@project/router/types';
 
-import { LAYOUT } from '@/router/constant';
-import { t } from '@/hooks/web/useI18n';
+import { LAYOUT } from '@project/router/constant';
+import { t } from '@project/hooks/web/useI18n';
 
 const dashboard: AppRouteModule = {
   path: '/dashboard',
@@ -17,7 +17,7 @@ const dashboard: AppRouteModule = {
     {
       path: 'analysis',
       name: 'Analysis',
-      component: () => import('@/views/dashboard/analysis/index.vue'),
+      component: () => import('@project/views/dashboard/analysis/index.vue'),
       meta: {
         // affix: true,
         title: t('routes.dashboard.analysis'),
@@ -26,7 +26,7 @@ const dashboard: AppRouteModule = {
     {
       path: 'workbench',
       name: 'Workbench',
-      component: () => import('@/views/dashboard/workbench/index.vue'),
+      component: () => import('@project/views/dashboard/workbench/index.vue'),
       meta: {
         title: t('routes.dashboard.workbench'),
       },

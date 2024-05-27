@@ -1,8 +1,8 @@
-import { useI18n } from '@/hooks/web/useI18n';
-import { useGo } from '@/hooks/web/usePage';
-import { getMenus } from '@/router/menus';
-import { type Menu } from '@/router/types';
-import { filter, forEach } from '@/utils/helper/treeHelper';
+import { useI18n } from '@project/hooks/web/useI18n';
+import { useGo } from '@project/hooks/web/usePage';
+import { getMenus } from '@project/router/menus';
+import { type Menu } from '@project/router/types';
+import { filter, forEach } from '@project/utils/helper/treeHelper';
 import { useScrollTo } from '@vben/hooks';
 import { type AnyFunction } from '@vben/types';
 import { onKeyStroke, useDebounceFn } from '@vueuse/core';

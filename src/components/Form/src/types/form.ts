@@ -1,9 +1,9 @@
 import type { NamePath, RuleObject } from 'ant-design-vue/lib/form/interface';
 import type { VNode, CSSProperties } from 'vue';
-import type { ButtonProps as AntdButtonProps } from '@/components/Button';
+import type { ButtonProps as AntdButtonProps } from '@project/components/Button';
 import type { FormItem } from './formItem';
 import type { ColEx, ComponentType, ComponentProps } from './';
-import type { TableActionType } from '@/components/Table/src/types/table';
+import type { TableActionType } from '@project/components/Table/src/types/table';
 import type { RowProps } from 'ant-design-vue/lib/grid/Row';
 
 export type FieldMapToTime = [string, [string, string], (string | [string, string])?][];

@@ -27,12 +27,12 @@
 <script lang="ts" setup>
   import { ref } from 'vue';
 
-  import { CollapseContainer } from '@/components/Container';
-  import { useTabs } from '@/hooks/web/useTabs';
-  import { PageWrapper } from '@/components/Page';
+  import { CollapseContainer } from '@project/components/Container';
+  import { useTabs } from '@project/hooks/web/useTabs';
+  import { PageWrapper } from '@project/components/Page';
   import { Alert } from 'ant-design-vue';
-  import { useMessage } from '@/hooks/web/useMessage';
-  import { useGo } from '@/hooks/web/usePage';
+  import { useMessage } from '@project/hooks/web/useMessage';
+  import { useGo } from '@project/hooks/web/usePage';
 
   defineOptions({ name: 'TabsDemo' });
 

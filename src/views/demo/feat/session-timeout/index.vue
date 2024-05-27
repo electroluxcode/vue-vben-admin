@@ -15,9 +15,9 @@
   </PageWrapper>
 </template>
 <script lang="ts" setup>
-  import { PageWrapper } from '@/components/Page';
-  import { useUserStore } from '@/store/modules/user';
-  import { sessionTimeoutApi, tokenExpiredApi } from '@/api/demo/account';
+  import { PageWrapper } from '@project/components/Page';
+  import { useUserStore } from '@project/store/modules/user';
+  import { sessionTimeoutApi, tokenExpiredApi } from '@project/api/demo/account';
   import { Card } from 'ant-design-vue';
 
   defineOptions({ name: 'TestSessionTimeout' });

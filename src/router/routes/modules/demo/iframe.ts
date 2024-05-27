@@ -1,9 +1,9 @@
-import type { AppRouteModule } from '@/router/types';
+import type { AppRouteModule } from '@project/router/types';
 
-import { LAYOUT } from '@/router/constant';
-import { t } from '@/hooks/web/useI18n';
+import { LAYOUT } from '@project/router/constant';
+import { t } from '@project/hooks/web/useI18n';
 
-const IFrame = () => import('@/views/sys/iframe/FrameBlank.vue');
+const IFrame = () => import('@project/views/sys/iframe/FrameBlank.vue');
 
 const iframe: AppRouteModule = {
   path: '/frame',

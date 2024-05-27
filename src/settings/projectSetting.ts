@@ -1,6 +1,6 @@
-import type { ProjectConfig } from '#/config';
-import { MenuTypeEnum, MenuModeEnum, TriggerEnum, MixSidebarTriggerEnum } from '@/enums/menuEnum';
-import { CacheTypeEnum } from '@/enums/cacheEnum';
+import type { ProjectConfig } from '@projectType/config';
+import { MenuTypeEnum, MenuModeEnum, TriggerEnum, MixSidebarTriggerEnum } from '@project/enums/menuEnum';
+import { CacheTypeEnum } from '@project/enums/cacheEnum';
 import {
   ContentEnum,
   PermissionModeEnum,
@@ -8,7 +8,7 @@ import {
   RouterTransitionEnum,
   SettingButtonPositionEnum,
   SessionTimeoutProcessingEnum,
-} from '@/enums/appEnum';
+} from '@project/enums/appEnum';
 import {
   SIDE_BAR_BG_COLOR_LIST,
   HEADER_PRESET_BG_COLOR_LIST,

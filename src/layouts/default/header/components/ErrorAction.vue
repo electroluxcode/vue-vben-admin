@@ -13,10 +13,10 @@
 <script lang="ts" setup>
   import { computed } from 'vue';
   import { Tooltip, Badge } from 'ant-design-vue';
-  import Icon from '@/components/Icon/Icon.vue';
-  import { useI18n } from '@/hooks/web/useI18n';
-  import { useErrorLogStore } from '@/store/modules/errorLog';
-  import { PageEnum } from '@/enums/pageEnum';
+  import Icon from '@project/components/Icon/Icon.vue';
+  import { useI18n } from '@project/hooks/web/useI18n';
+  import { useErrorLogStore } from '@project/store/modules/errorLog';
+  import { PageEnum } from '@project/enums/pageEnum';
 
   import { useRouter } from 'vue-router';
 

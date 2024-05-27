@@ -6,8 +6,10 @@
     "declaration": false,
     "types": ["vite/client"],
     "paths": {
-      "@/*": ["src/*"],
-      "#/*": ["types/*"]
+      "@project/*": ["src/*"],
+      "@projectType/*": ["types/*"],
+      "@/*": ["src/vben-admin-sync/src/*"],
+      "#/*": ["src/vben-admin-sync/types/*"]
     }
   },
   "include": [

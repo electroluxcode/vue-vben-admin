@@ -8,8 +8,8 @@
   </PageWrapper>
 </template>
 <script lang="ts" setup>
-  import { PageWrapper } from '@/components/Page';
-  import { CollapseContainer } from '@/components/Container';
+  import { PageWrapper } from '@project/components/Page';
+  import { CollapseContainer } from '@project/components/Container';
 
   import printJS from 'print-js';
 

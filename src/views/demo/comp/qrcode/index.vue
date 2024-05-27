@@ -79,10 +79,10 @@
   </PageWrapper>
 </template>
 <script lang="ts" setup>
-  import LogoImg from '@/assets/images/logo.png';
-  import { CollapseContainer } from '@/components/Container';
-  import { PageWrapper } from '@/components/Page';
-  import { QrCode, QrCodeActionType } from '@/components/Qrcode';
+  import LogoImg from '@project/assets/images/logo.png';
+  import { CollapseContainer } from '@project/components/Container';
+  import { PageWrapper } from '@project/components/Page';
+  import { QrCode, QrCodeActionType } from '@project/components/Qrcode';
   import { type Nullable } from '@vben/types';
   import { QRCode } from 'ant-design-vue';
   import { ref, unref } from 'vue';

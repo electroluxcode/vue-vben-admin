@@ -104,21 +104,21 @@
   import { Tooltip, Popover, Checkbox, Divider } from 'ant-design-vue';
   import type { CheckboxChangeEvent } from 'ant-design-vue/lib/checkbox/interface';
   import { SettingOutlined, DragOutlined } from '@ant-design/icons-vue';
-  import Icon from '@/components/Icon/Icon.vue';
-  import { ScrollContainer } from '@/components/Container';
-  import { useI18n } from '@/hooks/web/useI18n';
+  import Icon from '@project/components/Icon/Icon.vue';
+  import { ScrollContainer } from '@project/components/Container';
+  import { useI18n } from '@project/hooks/web/useI18n';
   import { useTableContext } from '../../hooks/useTableContext';
-  import { useDesign } from '@/hooks/web/useDesign';
-  import { isFunction, isNil } from '@/utils/is';
-  import { getPopupContainer as getParentContainer } from '@/utils';
+  import { useDesign } from '@project/hooks/web/useDesign';
+  import { isFunction, isNil } from '@project/utils/is';
+  import { getPopupContainer as getParentContainer } from '@project/utils';
   import { cloneDeep, omit } from 'lodash-es';
   import Sortablejs from 'sortablejs';
-  import { INDEX_COLUMN_FLAG } from '@/components/Table/src/const';
+  import { INDEX_COLUMN_FLAG } from '@project/components/Table/src/const';
 
   // 列表设置缓存
-  import { useTableSettingStore } from '@/store/modules/tableSetting';
+  import { useTableSettingStore } from '@project/store/modules/tableSetting';
   import { useRoute } from 'vue-router';
-  import { TableRowSelection } from '@/components/Table/src/types/table';
+  import { TableRowSelection } from '@project/components/Table/src/types/table';
 
   const tableSettingStore = useTableSettingStore();
 

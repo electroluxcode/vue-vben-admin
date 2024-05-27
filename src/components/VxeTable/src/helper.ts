@@ -1,5 +1,5 @@
 import { ComponentType } from './componentType';
-import { useI18n } from '@/hooks/web/useI18n';
+import { useI18n } from '@project/hooks/web/useI18n';
 import XEUtils from 'xe-utils';
 import { ignoreTrimInputComponents } from './const';
 

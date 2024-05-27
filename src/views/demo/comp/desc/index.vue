@@ -23,8 +23,8 @@
   </PageWrapper>
 </template>
 <script lang="ts" setup>
-  import { Description, DescItem, useDescription } from '@/components/Description';
-  import { PageWrapper } from '@/components/Page';
+  import { Description, DescItem, useDescription } from '@project/components/Description';
+  import { PageWrapper } from '@project/components/Page';
 
   const mockData: Recordable = {
     username: 'test',

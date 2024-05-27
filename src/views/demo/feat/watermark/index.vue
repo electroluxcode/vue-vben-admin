@@ -20,9 +20,9 @@
 </template>
 <script lang="ts" setup>
   import { onUnmounted, ref } from 'vue';
-  import { CollapseContainer } from '@/components/Container';
-  import { useWatermark } from '@/hooks/web/useWatermark';
-  import { PageWrapper } from '@/components/Page';
+  import { CollapseContainer } from '@project/components/Container';
+  import { useWatermark } from '@project/hooks/web/useWatermark';
+  import { PageWrapper } from '@project/components/Page';
 
   const app = ref(document.body);
 

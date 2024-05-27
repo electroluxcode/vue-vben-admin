@@ -12,7 +12,7 @@
   </BasicModal>
 </template>
 <script lang="ts" setup>
-  import { BasicModal, useModalInner } from '@/components/Modal';
+  import { BasicModal, useModalInner } from '@project/components/Modal';
 
   const [register, { closeModal, setModalProps }] = useModalInner();
 </script>

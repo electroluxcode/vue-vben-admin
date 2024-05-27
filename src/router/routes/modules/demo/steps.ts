@@ -1,7 +1,7 @@
-import type { AppRouteModule } from '@/router/types';
+import type { AppRouteModule } from '@project/router/types';
 
-import { LAYOUT } from '@/router/constant';
-import { t } from '@/hooks/web/useI18n';
+import { LAYOUT } from '@project/router/constant';
+import { t } from '@project/hooks/web/useI18n';
 
 const steps: AppRouteModule = {
   path: '/steps',
@@ -18,7 +18,7 @@ const steps: AppRouteModule = {
     {
       path: 'index',
       name: 'StepsDemoPage',
-      component: () => import('@/views/demo/steps/index.vue'),
+      component: () => import('@project/views/demo/steps/index.vue'),
       meta: {
         title: t('routes.demo.steps.page'),
         icon: 'whh:paintroll',

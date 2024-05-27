@@ -53,16 +53,16 @@
 </template>
 
 <script lang="ts" setup>
-  import { CollapseContainer } from '@/components/Container';
-  import Icon from '@/components/Icon/Icon.vue';
+  import { CollapseContainer } from '@project/components/Container';
+  import Icon from '@project/components/Icon/Icon.vue';
   import { Col, Row, Tabs, Tag } from 'ant-design-vue';
   import { computed } from 'vue';
   import Application from './Application.vue';
   import Article from './Article.vue';
   import Project from './Project.vue';
 
-  import headerImg from '@/assets/images/header.jpg';
-  import { useUserStore } from '@/store/modules/user';
+  import headerImg from '@project/assets/images/header.jpg';
+  import { useUserStore } from '@project/store/modules/user';
   import { achieveList, details, tags, teams } from './data';
 
   const userStore = useUserStore();

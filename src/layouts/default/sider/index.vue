@@ -19,9 +19,9 @@
   import MixSider from './MixSider.vue';
   import { Drawer } from 'ant-design-vue';
 
-  import { useAppInject } from '@/hooks/web/useAppInject';
-  import { useMenuSetting } from '@/hooks/setting/useMenuSetting';
-  import { useDesign } from '@/hooks/web/useDesign';
+  import { useAppInject } from '@project/hooks/web/useAppInject';
+  import { useMenuSetting } from '@project/hooks/setting/useMenuSetting';
+  import { useDesign } from '@project/hooks/web/useDesign';
 
   defineOptions({ name: 'SiderWrapper' });
 

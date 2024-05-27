@@ -9,8 +9,8 @@
 <script lang="ts" setup>
   import { Menu } from 'ant-design-vue';
   import { computed, getCurrentInstance } from 'vue';
-  import Icon from '@/components/Icon/Icon.vue';
-  import { propTypes } from '@/utils/propTypes';
+  import Icon from '@project/components/Icon/Icon.vue';
+  import { propTypes } from '@project/utils/propTypes';
 
   defineOptions({ name: 'DropdownMenuItem' });
 

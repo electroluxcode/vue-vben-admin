@@ -7,12 +7,12 @@
 </template>
 
 <script lang="ts" setup>
-  import { AppProvider } from '@/components/Application';
-  import { useTitle } from '@/hooks/web/useTitle';
-  import { useLocale } from '@/locales/useLocale';
+  import { AppProvider } from '@project/components/Application';
+  import { useTitle } from '@project/hooks/web/useTitle';
+  import { useLocale } from '@project/locales/useLocale';
   import { ConfigProvider } from 'ant-design-vue';
 
-  import { useDarkModeTheme } from '@/hooks/setting/useDarkModeTheme';
+  import { useDarkModeTheme } from '@project/hooks/setting/useDarkModeTheme';
   import 'dayjs/locale/zh-cn';
   import { computed } from 'vue';
 

@@ -1,20 +1,20 @@
 import 'uno.css';
-import '@/design/index.less';
-import '@/components/VxeTable/src/css/index.scss';
+import '@project/design/index.less';
+import '@project/components/VxeTable/src/css/index.scss';
 import 'ant-design-vue/dist/reset.css';
 // Register icon sprite
 import 'virtual:svg-icons-register';
 
 import { createApp } from 'vue';
 
-import { registerGlobComp } from '@/components/registerGlobComp';
-import { setupGlobDirectives } from '@/directives';
-import { setupI18n } from '@/locales/setupI18n';
-import { setupErrorHandle } from '@/logics/error-handle';
-import { initAppConfigStore } from '@/logics/initAppConfig';
-import { router, setupRouter } from '@/router';
-import { setupRouterGuard } from '@/router/guard';
-import { setupStore } from '@/store';
+import { registerGlobComp } from '@project/components/registerGlobComp';
+import { setupGlobDirectives } from '@project/directives';
+import { setupI18n } from '@project/locales/setupI18n';
+import { setupErrorHandle } from '@project/logics/error-handle';
+import { initAppConfigStore } from '@project/logics/initAppConfig';
+import { router, setupRouter } from '@project/router';
+import { setupRouterGuard } from '@project/router/guard';
+import { setupStore } from '@project/store';
 
 import App from './App.vue';
 

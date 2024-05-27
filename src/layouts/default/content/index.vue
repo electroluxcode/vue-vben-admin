@@ -12,10 +12,10 @@
   import { ref } from 'vue';
   import { BackTop } from 'ant-design-vue';
 
-  import PageLayout from '@/layouts/page/index.vue';
-  import { useDesign } from '@/hooks/web/useDesign';
-  import { useRootSetting } from '@/hooks/setting/useRootSetting';
-  import { useTransitionSetting } from '@/hooks/setting/useTransitionSetting';
+  import PageLayout from '@project/layouts/page/index.vue';
+  import { useDesign } from '@project/hooks/web/useDesign';
+  import { useRootSetting } from '@project/hooks/setting/useRootSetting';
+  import { useTransitionSetting } from '@project/hooks/setting/useTransitionSetting';
   import { useContentViewHeight } from './useContentViewHeight';
 
   defineOptions({ name: 'LayoutContent' });

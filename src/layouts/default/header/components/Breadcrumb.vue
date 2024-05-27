@@ -40,20 +40,20 @@
   import { ref, watchEffect } from 'vue';
 
   import { Breadcrumb, BreadcrumbItem, Menu, MenuItem } from 'ant-design-vue';
-  import Icon from '@/components/Icon/Icon.vue';
+  import Icon from '@project/components/Icon/Icon.vue';
 
-  import { useDesign } from '@/hooks/web/useDesign';
-  import { useRootSetting } from '@/hooks/setting/useRootSetting';
-  import { useGo } from '@/hooks/web/usePage';
-  import { useI18n } from '@/hooks/web/useI18n';
+  import { useDesign } from '@project/hooks/web/useDesign';
+  import { useRootSetting } from '@project/hooks/setting/useRootSetting';
+  import { useGo } from '@project/hooks/web/usePage';
+  import { useI18n } from '@project/hooks/web/useI18n';
 
-  import { propTypes } from '@/utils/propTypes';
-  import { isString } from '@/utils/is';
-  import { filter } from '@/utils/helper/treeHelper';
-  import { getMenus } from '@/router/menus';
+  import { propTypes } from '@project/utils/propTypes';
+  import { isString } from '@project/utils/is';
+  import { filter } from '@project/utils/helper/treeHelper';
+  import { getMenus } from '@project/router/menus';
 
-  import { REDIRECT_NAME } from '@/router/constant';
-  import { getAllParentPath } from '@/router/helper/menuHelper';
+  import { REDIRECT_NAME } from '@project/router/constant';
+  import { getAllParentPath } from '@project/router/helper/menuHelper';
 
   defineOptions({ name: 'LayoutBreadcrumb' });
 

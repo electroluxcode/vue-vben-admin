@@ -109,20 +109,20 @@ interface _CustomComponents {
   >;
   ApiCascader: ExtractPropTypes<(typeof import('../components/ApiCascader.vue'))['default']>;
   StrengthMeter: ExtractPropTypes<
-    (typeof import('@/components/StrengthMeter/src/StrengthMeter.vue'))['default']
+    (typeof import('@project/components/StrengthMeter/src/StrengthMeter.vue'))['default']
   >;
-  Upload: ExtractPropTypes<(typeof import('@/components/Upload/src/BasicUpload.vue'))['default']>;
+  Upload: ExtractPropTypes<(typeof import('@project/components/Upload/src/BasicUpload.vue'))['default']>;
   ImageUpload: ExtractPropTypes<
-    (typeof import('@/components/Upload/src/components/ImageUpload.vue'))['default']
+    (typeof import('@project/components/Upload/src/components/ImageUpload.vue'))['default']
   >;
-  IconPicker: ExtractPropTypes<(typeof import('@/components/Icon/src/IconPicker.vue'))['default']>;
+  IconPicker: ExtractPropTypes<(typeof import('@project/components/Icon/src/IconPicker.vue'))['default']>;
   ApiTransfer: ExtractPropTypes<(typeof import('../components/ApiTransfer.vue'))['default']>;
   CropperAvatar: ExtractPropTypes<
-    (typeof import('@/components/Cropper/src/CropperAvatar.vue'))['default']
+    (typeof import('@project/components/Cropper/src/CropperAvatar.vue'))['default']
   >;
-  BasicTitle: ExtractPropTypes<(typeof import('@/components/Basic/src/BasicTitle.vue'))['default']>;
+  BasicTitle: ExtractPropTypes<(typeof import('@project/components/Basic/src/BasicTitle.vue'))['default']>;
   InputCountDown: ExtractPropTypes<
-    (typeof import('@/components/CountDown/src/CountdownInput.vue'))['default']
+    (typeof import('@project/components/CountDown/src/CountdownInput.vue'))['default']
   >;
 }
 

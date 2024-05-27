@@ -21,11 +21,11 @@
 </template>
 <script lang="ts" setup>
   import { ref } from 'vue';
-  import { BasicForm, useForm } from '@/components/Form';
-  import { CollapseContainer } from '@/components/Container';
-  import { PageWrapper } from '@/components/Page';
+  import { BasicForm, useForm } from '@project/components/Form';
+  import { CollapseContainer } from '@project/components/Container';
+  import { PageWrapper } from '@project/components/Page';
 
-  import { useMessage } from '@/hooks/web/useMessage';
+  import { useMessage } from '@project/hooks/web/useMessage';
 
   const { createMessage } = useMessage();
   const count = ref(0);

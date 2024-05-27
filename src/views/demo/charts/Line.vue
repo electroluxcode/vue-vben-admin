@@ -3,7 +3,7 @@
 </template>
 <script lang="ts" setup>
   import { PropType, ref, Ref, onMounted } from 'vue';
-  import { useECharts } from '@/hooks/web/useECharts';
+  import { useECharts } from '@project/hooks/web/useECharts';
   import { getLineData } from './data';
 
   defineProps({

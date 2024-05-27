@@ -51,21 +51,21 @@
 <script lang="ts" setup>
   import { ref, toRefs, unref, computed, PropType } from 'vue';
   import { Upload, Alert } from 'ant-design-vue';
-  import { BasicModal, useModalInner } from '@/components/Modal';
+  import { BasicModal, useModalInner } from '@project/components/Modal';
   // hooks
   import { useUploadType } from '../hooks/useUpload';
-  import { useMessage } from '@/hooks/web/useMessage';
+  import { useMessage } from '@project/hooks/web/useMessage';
   //   types
   import { FileItem, UploadResultStatus } from '../types/typing';
   import { basicProps } from '../props';
   import { createTableColumns, createActionColumn } from './data';
   // utils
   import { checkImgType, getBase64WithFile } from '../helper';
-  import { buildUUID } from '@/utils/uuid';
-  import { isFunction } from '@/utils/is';
-  import { warn } from '@/utils/log';
+  import { buildUUID } from '@project/utils/uuid';
+  import { isFunction } from '@project/utils/is';
+  import { warn } from '@project/utils/log';
   import FileList from './FileList.vue';
-  import { useI18n } from '@/hooks/web/useI18n';
+  import { useI18n } from '@project/hooks/web/useI18n';
   import { get } from 'lodash-es';
 
   const props = defineProps({

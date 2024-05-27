@@ -15,9 +15,9 @@
 <script lang="ts" setup>
   import { ref } from 'vue';
 
-  import { ImpExcel, ExcelData } from '@/components/Excel';
-  import { BasicTable, BasicColumn } from '@/components/Table';
-  import { PageWrapper } from '@/components/Page';
+  import { ImpExcel, ExcelData } from '@project/components/Excel';
+  import { BasicTable, BasicColumn } from '@project/components/Table';
+  import { PageWrapper } from '@project/components/Page';
 
   const tableListRef = ref<
     {

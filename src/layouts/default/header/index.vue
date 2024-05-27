@@ -58,23 +58,23 @@
   import { Layout } from 'ant-design-vue';
   import { computed, unref } from 'vue';
 
-  import { AppLocalePicker, AppLogo, AppSearch } from '@/components/Application';
-  import { SettingButtonPositionEnum } from '@/enums/appEnum';
-  import { MenuModeEnum, MenuSplitTyeEnum } from '@/enums/menuEnum';
-  import { useHeaderSetting } from '@/hooks/setting/useHeaderSetting';
-  import { useMenuSetting } from '@/hooks/setting/useMenuSetting';
-  import { useRootSetting } from '@/hooks/setting/useRootSetting';
-  import { useAppInject } from '@/hooks/web/useAppInject';
-  import { useDesign } from '@/hooks/web/useDesign';
-  import { useLocale } from '@/locales/useLocale';
-  import { createAsyncComponent } from '@/utils/factory/createAsyncComponent';
-  import { propTypes } from '@/utils/propTypes';
+  import { AppLocalePicker, AppLogo, AppSearch } from '@project/components/Application';
+  import { SettingButtonPositionEnum } from '@project/enums/appEnum';
+  import { MenuModeEnum, MenuSplitTyeEnum } from '@project/enums/menuEnum';
+  import { useHeaderSetting } from '@project/hooks/setting/useHeaderSetting';
+  import { useMenuSetting } from '@project/hooks/setting/useMenuSetting';
+  import { useRootSetting } from '@project/hooks/setting/useRootSetting';
+  import { useAppInject } from '@project/hooks/web/useAppInject';
+  import { useDesign } from '@project/hooks/web/useDesign';
+  import { useLocale } from '@project/locales/useLocale';
+  import { createAsyncComponent } from '@project/utils/factory/createAsyncComponent';
+  import { propTypes } from '@project/utils/propTypes';
 
   import LayoutMenu from '../menu/index.vue';
   import LayoutTrigger from '../trigger/index.vue';
   import { ErrorAction, FullScreen, LayoutBreadcrumb, Notify, UserDropDown } from './components';
 
-  const SettingDrawer = createAsyncComponent(() => import('@/layouts/default/setting/index.vue'), {
+  const SettingDrawer = createAsyncComponent(() => import('@project/layouts/default/setting/index.vue'), {
     loading: true,
   });
   defineOptions({ name: 'LayoutHeader' });

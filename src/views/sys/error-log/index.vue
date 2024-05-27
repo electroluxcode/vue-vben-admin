@@ -33,15 +33,15 @@
 </template>
 
 <script lang="ts" setup>
-  import type { ErrorLogInfo } from '#/store';
+  import type { ErrorLogInfo } from '@projectType/store';
   import { watch, ref, nextTick } from 'vue';
   import DetailModal from './DetailModal.vue';
-  import { BasicTable, useTable, TableAction } from '@/components/Table';
-  import { useModal } from '@/components/Modal';
-  import { useMessage } from '@/hooks/web/useMessage';
-  import { useI18n } from '@/hooks/web/useI18n';
-  import { useErrorLogStore } from '@/store/modules/errorLog';
-  import { fireErrorApi } from '@/api/demo/error';
+  import { BasicTable, useTable, TableAction } from '@project/components/Table';
+  import { useModal } from '@project/components/Modal';
+  import { useMessage } from '@project/hooks/web/useMessage';
+  import { useI18n } from '@project/hooks/web/useI18n';
+  import { useErrorLogStore } from '@project/store/modules/errorLog';
+  import { fireErrorApi } from '@project/api/demo/error';
   import { getColumns } from './data';
   import { cloneDeep } from 'lodash-es';
 

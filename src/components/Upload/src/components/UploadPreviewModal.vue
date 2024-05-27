@@ -13,15 +13,15 @@
 <script lang="ts" setup>
   import { watch, ref } from 'vue';
   import FileList from './FileList.vue';
-  import { BasicModal, useModalInner } from '@/components/Modal';
+  import { BasicModal, useModalInner } from '@project/components/Modal';
   import { previewProps } from '../props';
   import { FileBasicColumn, PreviewFileItem } from '../types/typing';
-  import { downloadByUrl } from '@/utils/file/download';
+  import { downloadByUrl } from '@project/utils/file/download';
   import { createPreviewColumns, createPreviewActionColumn } from './data';
-  import { useI18n } from '@/hooks/web/useI18n';
-  import { isArray, isFunction } from '@/utils/is';
-  import { BasicColumn } from '@/components/Table';
-  import { useMessage } from '@/hooks/web/useMessage';
+  import { useI18n } from '@project/hooks/web/useI18n';
+  import { isArray, isFunction } from '@project/utils/is';
+  import { BasicColumn } from '@project/components/Table';
+  import { useMessage } from '@project/hooks/web/useMessage';
 
   const { createMessage } = useMessage();
 

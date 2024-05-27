@@ -6,9 +6,9 @@
 <script setup lang="ts">
   import { createVNode } from 'vue';
   import { Alert, Button } from 'ant-design-vue';
-  import { BasicForm, FormSchema, useForm } from '@/components/Form';
-  import { useMessage } from '@/hooks/web/useMessage';
-  import { uploadApi } from '@/api/sys/upload';
+  import { BasicForm, FormSchema, useForm } from '@project/components/Form';
+  import { useMessage } from '@project/hooks/web/useMessage';
+  import { uploadApi } from '@project/api/sys/upload';
 
   const { createMessage } = useMessage();
 

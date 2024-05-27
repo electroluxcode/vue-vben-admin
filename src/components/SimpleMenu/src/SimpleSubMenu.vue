@@ -46,17 +46,17 @@
 </template>
 <script lang="ts" setup>
   import type { PropType } from 'vue';
-  import type { Menu } from '@/router/types';
+  import type { Menu } from '@project/router/types';
 
   import { computed } from 'vue';
-  import { useDesign } from '@/hooks/web/useDesign';
-  import Icon from '@/components/Icon/Icon.vue';
+  import { useDesign } from '@project/hooks/web/useDesign';
+  import Icon from '@project/components/Icon/Icon.vue';
 
   import MenuItem from './components/MenuItem.vue';
   import SubMenu from './components/SubMenuItem.vue';
-  import { propTypes } from '@/utils/propTypes';
-  import { useI18n } from '@/hooks/web/useI18n';
-  import { createAsyncComponent } from '@/utils/factory/createAsyncComponent';
+  import { propTypes } from '@project/utils/propTypes';
+  import { useI18n } from '@project/hooks/web/useI18n';
+  import { createAsyncComponent } from '@project/utils/factory/createAsyncComponent';
 
   const SimpleMenuTag = createAsyncComponent(() => import('./SimpleMenuTag.vue'));
 

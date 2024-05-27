@@ -10,10 +10,10 @@
 </template>
 <script lang="ts" setup>
   import { unref, ref } from 'vue';
-  import { CollapseContainer } from '@/components/Container';
-  import { useMessage } from '@/hooks/web/useMessage';
-  import { PageWrapper } from '@/components/Page';
-  import { copyText } from '@/utils/copyTextToClipboard';
+  import { CollapseContainer } from '@project/components/Container';
+  import { useMessage } from '@project/hooks/web/useMessage';
+  import { PageWrapper } from '@project/components/Page';
+  import { copyText } from '@project/utils/copyTextToClipboard';
 
   const valueRef = ref('');
   const { createMessage } = useMessage();

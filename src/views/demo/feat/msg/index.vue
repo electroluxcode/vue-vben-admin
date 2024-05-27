@@ -35,9 +35,9 @@
   </PageWrapper>
 </template>
 <script lang="ts" setup>
-  import { CollapseContainer } from '@/components/Container';
-  import { useMessage } from '@/hooks/web/useMessage';
-  import { PageWrapper } from '@/components/Page';
+  import { CollapseContainer } from '@project/components/Container';
+  import { useMessage } from '@project/hooks/web/useMessage';
+  import { PageWrapper } from '@project/components/Page';
 
   const {
     createMessage,

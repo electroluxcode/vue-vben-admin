@@ -5,11 +5,11 @@
 </template>
 <script lang="ts" setup>
   import { ref, computed, unref } from 'vue';
-  import { BasicModal, useModalInner } from '@/components/Modal';
-  import { BasicForm, useForm } from '@/components/Form';
+  import { BasicModal, useModalInner } from '@project/components/Modal';
+  import { BasicForm, useForm } from '@project/components/Form';
   import { formSchema } from './dept.data';
 
-  import { getDeptList } from '@/api/demo/system';
+  import { getDeptList } from '@project/api/demo/system';
 
   defineOptions({ name: 'DeptModal' });
 

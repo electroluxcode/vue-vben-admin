@@ -11,5 +11,5 @@
   import Upload2 from './Upload2.vue';
   import Upload3 from './Upload3.vue';
   import Upload4 from './Upload4.vue';
-  import { PageWrapper } from '@/components/Page';
+  import { PageWrapper } from '@project/components/Page';
 </script>

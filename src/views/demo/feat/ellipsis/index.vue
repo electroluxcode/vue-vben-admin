@@ -24,9 +24,9 @@
 </template>
 <script lang="ts" setup>
   import { ref } from 'vue';
-  import { CollapseContainer } from '@/components/Container';
-  import { EllipsisText } from '@/components/EllipsisText';
-  import { PageWrapper } from '@/components/Page';
+  import { CollapseContainer } from '@project/components/Container';
+  import { EllipsisText } from '@project/components/EllipsisText';
+  import { PageWrapper } from '@project/components/Page';
 
   const text = ref(
     `

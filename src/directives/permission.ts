@@ -5,8 +5,8 @@
  */
 import type { App, Directive, DirectiveBinding } from 'vue';
 
-import { usePermission } from '@/hooks/web/usePermission';
-import { RoleEnum } from '@/enums/roleEnum';
+import { usePermission } from '@project/hooks/web/usePermission';
+import { RoleEnum } from '@project/enums/roleEnum';
 
 function isAuth(el: Element, binding: any) {
   const { hasPermission } = usePermission();

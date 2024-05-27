@@ -79,13 +79,13 @@
 <script lang="ts" setup>
   import { ref, computed } from 'vue';
   import { Input } from 'ant-design-vue';
-  import { useUserStore } from '@/store/modules/user';
-  import { useLockStore } from '@/store/modules/lock';
-  import { useI18n } from '@/hooks/web/useI18n';
+  import { useUserStore } from '@project/store/modules/user';
+  import { useLockStore } from '@project/store/modules/lock';
+  import { useI18n } from '@project/hooks/web/useI18n';
   import { useNow } from './useNow';
-  import { useDesign } from '@/hooks/web/useDesign';
+  import { useDesign } from '@project/hooks/web/useDesign';
   import { LockOutlined } from '@ant-design/icons-vue';
-  import headerImg from '@/assets/images/header.jpg';
+  import headerImg from '@project/assets/images/header.jpg';
 
   const InputPassword = Input.Password;
 

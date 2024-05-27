@@ -34,11 +34,11 @@
   </PageWrapper>
 </template>
 <script lang="ts" setup>
-  import { BasicTable, useTable, TableAction } from '@/components/Table';
-  import { PageWrapper } from '@/components/Page';
+  import { BasicTable, useTable, TableAction } from '@project/components/Table';
+  import { PageWrapper } from '@project/components/Page';
   import { getBasicColumns } from './tableData';
 
-  import { demoListApi } from '@/api/demo/table';
+  import { demoListApi } from '@project/api/demo/table';
 
   const [registerTable] = useTable({
     api: demoListApi,

@@ -30,8 +30,8 @@
 </template>
 <script lang="ts" setup>
   import { reactive, ref } from 'vue';
-  import { Loading, useLoading } from '@/components/Loading';
-  import { PageWrapper } from '@/components/Page';
+  import { Loading, useLoading } from '@project/components/Loading';
+  import { PageWrapper } from '@project/components/Page';
   import { Alert } from 'ant-design-vue';
 
   const wrapEl = ref<ElRef>(null);

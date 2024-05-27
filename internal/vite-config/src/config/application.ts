@@ -45,16 +45,25 @@ function defineApplicationConfig(defineOptions: DefineOptions = {}) {
             find: 'vue-i18n',
             replacement: 'vue-i18n/dist/vue-i18n.cjs.js',
           },
-          // @/xxxx => src/xxxx
           {
             find: /@\//,
-            replacement: pathResolve('src') + '/',
+            replacement:pathResolve('src')  + '/vben-admin-sync/src/',
           },
-          // #/xxxx => types/xxxx
+          // @projectType/xxxx => types/xxxx
           {
             find: /#\//,
-            replacement: pathResolve('types') + '/',
+            replacement:pathResolve('src')  +'/vben-admin-sync/types/',
           },
+          // @project/xxxx => src/xxxx
+          {
+            find: /@project\//,
+            replacement:pathResolve('src') + '/',
+          },
+           {
+            find: /@projectType\//,
+            replacement:pathResolve('types') + '/',
+          },
+        
         ],
       },
       define: defineData,

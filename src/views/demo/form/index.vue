@@ -58,18 +58,18 @@
 <script lang="ts" setup>
   import { type Recordable } from '@vben/types';
   import { computed, unref, ref } from 'vue';
-  import { BasicForm, ApiSelect, FormSchema } from '@/components/Form';
-  import { CollapseContainer } from '@/components/Container';
-  import { useMessage } from '@/hooks/web/useMessage';
-  import { PageWrapper } from '@/components/Page';
+  import { BasicForm, ApiSelect, FormSchema } from '@project/components/Form';
+  import { CollapseContainer } from '@project/components/Container';
+  import { useMessage } from '@project/hooks/web/useMessage';
+  import { PageWrapper } from '@project/components/Page';
 
-  import { optionsListApi } from '@/api/demo/select';
+  import { optionsListApi } from '@project/api/demo/select';
   import { useDebounceFn } from '@vueuse/core';
-  import { treeOptionsListApi } from '@/api/demo/tree';
+  import { treeOptionsListApi } from '@project/api/demo/tree';
   import { Select, type SelectProps } from 'ant-design-vue';
   import { cloneDeep } from 'lodash-es';
-  import { areaRecord } from '@/api/demo/cascader';
-  import { uploadApi } from '@/api/sys/upload';
+  import { areaRecord } from '@project/api/demo/cascader';
+  import { uploadApi } from '@project/api/sys/upload';
 
   let debounceOptionsFn = useDebounceFn(onSearch, 300);
   const valueSelectA = ref<string[]>([]);

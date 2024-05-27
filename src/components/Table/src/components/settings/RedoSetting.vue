@@ -9,7 +9,7 @@
 <script lang="ts" setup>
   import { Tooltip } from 'ant-design-vue';
   import { RedoOutlined } from '@ant-design/icons-vue';
-  import { useI18n } from '@/hooks/web/useI18n';
+  import { useI18n } from '@project/hooks/web/useI18n';
   import { useTableContext } from '../../hooks/useTableContext';
 
   defineOptions({ name: 'RedoSetting' });

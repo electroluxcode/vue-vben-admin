@@ -30,10 +30,10 @@
   </div>
 </template>
 <script lang="ts" setup>
-  import { BasicTable, useTable, TableAction } from '@/components/Table';
-  import { getDeptList } from '@/api/demo/system';
+  import { BasicTable, useTable, TableAction } from '@project/components/Table';
+  import { getDeptList } from '@project/api/demo/system';
 
-  import { useModal } from '@/components/Modal';
+  import { useModal } from '@project/components/Modal';
   import DeptModal from './DeptModal.vue';
 
   import { columns, searchFormSchema } from './dept.data';

@@ -41,16 +41,16 @@
 <script lang="ts" setup>
   import { reactive } from 'vue';
 
-  import { BasicTable, useTable, TableAction } from '@/components/Table';
-  import { getAccountList } from '@/api/demo/system';
-  import { PageWrapper } from '@/components/Page';
+  import { BasicTable, useTable, TableAction } from '@project/components/Table';
+  import { getAccountList } from '@project/api/demo/system';
+  import { PageWrapper } from '@project/components/Page';
   import DeptTree from './DeptTree.vue';
 
-  import { useModal } from '@/components/Modal';
+  import { useModal } from '@project/components/Modal';
   import AccountModal from './AccountModal.vue';
 
   import { columns, searchFormSchema } from './account.data';
-  import { useGo } from '@/hooks/web/usePage';
+  import { useGo } from '@project/hooks/web/usePage';
 
   defineOptions({ name: 'AccountManagement' });
 

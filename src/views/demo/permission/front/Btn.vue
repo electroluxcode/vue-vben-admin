@@ -63,11 +63,11 @@
   import { computed } from 'vue';
   import { Alert, Divider, Space } from 'ant-design-vue';
   import CurrentPermissionMode from '../CurrentPermissionMode.vue';
-  import { useUserStore } from '@/store/modules/user';
-  import { RoleEnum } from '@/enums/roleEnum';
-  import { usePermission } from '@/hooks/web/usePermission';
-  import { Authority } from '@/components/Authority';
-  import { PageWrapper } from '@/components/Page';
+  import { useUserStore } from '@project/store/modules/user';
+  import { RoleEnum } from '@project/enums/roleEnum';
+  import { usePermission } from '@project/hooks/web/usePermission';
+  import { Authority } from '@project/components/Authority';
+  import { PageWrapper } from '@project/components/Page';
 
   const { changeRole, hasPermission } = usePermission();
   const userStore = useUserStore();

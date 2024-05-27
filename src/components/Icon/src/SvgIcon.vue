@@ -10,7 +10,7 @@
 <script lang="ts" setup>
   import type { CSSProperties } from 'vue';
   import { computed } from 'vue';
-  import { useDesign } from '@/hooks/web/useDesign';
+  import { useDesign } from '@project/hooks/web/useDesign';
 
   defineOptions({ name: 'SvgIcon' });
 

@@ -13,11 +13,11 @@
   </PageWrapper>
 </template>
 <script lang="ts" setup>
-  import { BasicForm, FormSchema, useForm } from '@/components/Form';
-  import { CollapseContainer } from '@/components/Container';
-  import { useMessage } from '@/hooks/web/useMessage';
-  import { PageWrapper } from '@/components/Page';
-  import { isAccountExist } from '@/api/demo/system';
+  import { BasicForm, FormSchema, useForm } from '@project/components/Form';
+  import { CollapseContainer } from '@project/components/Container';
+  import { useMessage } from '@project/hooks/web/useMessage';
+  import { PageWrapper } from '@project/components/Page';
+  import { isAccountExist } from '@project/api/demo/system';
   import dayjs from "dayjs"
   
   const schemas: FormSchema[] = [

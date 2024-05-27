@@ -1,3 +1,4 @@
 [submodule "src/vben-admin-sync"]
 	path = src/vben-admin-sync
-	url = https://github.com/vbenjs/vue-vben-admin.git
+	url = https://github.com/electroluxcode/vue-vben-admin.git
+	branch = fix/mult-upload

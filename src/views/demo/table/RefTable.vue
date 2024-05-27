@@ -31,10 +31,10 @@
 </template>
 <script lang="ts" setup>
   import { ref, unref } from 'vue';
-  import { BasicTable, TableActionType } from '@/components/Table';
+  import { BasicTable, TableActionType } from '@project/components/Table';
   import { getBasicColumns, getBasicShortColumns } from './tableData';
-  import { useMessage } from '@/hooks/web/useMessage';
-  import { demoListApi } from '@/api/demo/table';
+  import { useMessage } from '@project/hooks/web/useMessage';
+  import { demoListApi } from '@project/api/demo/table';
   import { type Nullable } from '@vben/types';
 
   const tableRef = ref<Nullable<TableActionType>>(null);

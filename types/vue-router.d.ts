@@ -1,4 +1,4 @@
-import { RoleEnum } from '@/enums/roleEnum';
+import { RoleEnum } from '@project/enums/roleEnum';
 
 export {};
 

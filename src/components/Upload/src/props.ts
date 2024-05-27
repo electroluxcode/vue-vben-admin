@@ -3,9 +3,9 @@ import { FileBasicColumn } from './types/typing';
 
 import type { Options } from 'sortablejs';
 
-import { Merge } from '@/utils/types';
-import { propTypes } from '@/utils/propTypes';
-import { BasicColumn } from '@/components/Table';
+import { Merge } from '@project/utils/types';
+import { propTypes } from '@project/utils/propTypes';
+import { BasicColumn } from '@project/components/Table';
 
 type SortableOptions = Merge<
   Omit<Options, 'onEnd'>,

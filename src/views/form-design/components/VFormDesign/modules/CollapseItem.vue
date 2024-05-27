@@ -34,8 +34,8 @@
   import { defineComponent, reactive, PropType } from 'vue';
   import { IVFormComponent } from '../../../typings/v-form-component';
   import draggable from 'vuedraggable';
-  import Icon from '@/components/Icon/Icon.vue';
-  import { useDesign } from '@/hooks/web/useDesign';
+  import Icon from '@project/components/Icon/Icon.vue';
+  import { useDesign } from '@project/hooks/web/useDesign';
 
   export default defineComponent({
     name: 'CollapseItem',

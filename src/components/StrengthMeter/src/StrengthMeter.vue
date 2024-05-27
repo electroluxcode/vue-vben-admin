@@ -22,8 +22,8 @@
   import { computed, ref, watch, unref, watchEffect } from 'vue';
   import { Input } from 'ant-design-vue';
   import { zxcvbn } from '@zxcvbn-ts/core';
-  import { useDesign } from '@/hooks/web/useDesign';
-  import { propTypes } from '@/utils/propTypes';
+  import { useDesign } from '@project/hooks/web/useDesign';
+  import { propTypes } from '@project/utils/propTypes';
 
   defineOptions({ name: 'StrengthMeter' });
 

@@ -5,8 +5,8 @@
   </PageWrapper>
 </template>
 <script lang="ts" setup>
-  import { PageWrapper } from '@/components/Page';
-  import { useDesign } from '@/hooks/web/useDesign';
+  import { PageWrapper } from '@project/components/Page';
+  import { useDesign } from '@project/hooks/web/useDesign';
   import { ref } from 'vue';
   import { Tour, TourProps } from 'ant-design-vue';
 

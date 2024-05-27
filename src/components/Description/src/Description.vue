@@ -1,9 +1,9 @@
 <script lang="tsx">
-  import type { CollapseContainerOptions } from '@/components/Container';
-  import { CollapseContainer } from '@/components/Container';
-  import { useDesign } from '@/hooks/web/useDesign';
-  import { getSlot } from '@/utils/helper/tsxHelper';
-  import { isFunction } from '@/utils/is';
+  import type { CollapseContainerOptions } from '@project/components/Container';
+  import { CollapseContainer } from '@project/components/Container';
+  import { useDesign } from '@project/hooks/web/useDesign';
+  import { getSlot } from '@project/utils/helper/tsxHelper';
+  import { isFunction } from '@project/utils/is';
   import { useAttrs } from '@vben/hooks';
   import { Descriptions } from 'ant-design-vue';
   import type { DescriptionsProps } from 'ant-design-vue/es/descriptions';

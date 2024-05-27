@@ -57,9 +57,9 @@
   </div>
 </template>
 <script lang="ts" setup>
-  import { BasicTable, useTable, BasicColumn, TableAction } from '@/components/Table';
+  import { BasicTable, useTable, BasicColumn, TableAction } from '@project/components/Table';
 
-  import { demoListApi } from '@/api/demo/table';
+  import { demoListApi } from '@project/api/demo/table';
 
   const columns: BasicColumn[] = [
     {

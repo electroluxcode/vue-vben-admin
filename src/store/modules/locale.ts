@@ -1,11 +1,11 @@
-import type { LocaleSetting, LocaleType } from '#/config';
+import type { LocaleSetting, LocaleType } from '@projectType/config';
 
 import { defineStore } from 'pinia';
-import { store } from '@/store';
+import { store } from '@project/store';
 
-import { LOCALE_KEY } from '@/enums/cacheEnum';
-import { createLocalStorage } from '@/utils/cache';
-import { localeSetting } from '@/settings/localeSetting';
+import { LOCALE_KEY } from '@project/enums/cacheEnum';
+import { createLocalStorage } from '@project/utils/cache';
+import { localeSetting } from '@project/settings/localeSetting';
 
 const ls = createLocalStorage();
 

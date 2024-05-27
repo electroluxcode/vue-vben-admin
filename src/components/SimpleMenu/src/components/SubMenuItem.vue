@@ -69,15 +69,15 @@
     onBeforeMount,
     inject,
   } from 'vue';
-  import { useDesign } from '@/hooks/web/useDesign';
-  import { propTypes } from '@/utils/propTypes';
+  import { useDesign } from '@project/hooks/web/useDesign';
+  import { propTypes } from '@project/utils/propTypes';
   import { useMenuItem } from './useMenu';
   import { useSimpleRootMenuContext } from './useSimpleMenuContext';
-  import { CollapseTransition } from '@/components/Transition';
-  import Icon from '@/components/Icon/Icon.vue';
+  import { CollapseTransition } from '@project/components/Transition';
+  import Icon from '@project/components/Icon/Icon.vue';
   import { Popover } from 'ant-design-vue';
-  import { isBoolean, isObject } from '@/utils/is';
-  import { mitt } from '@/utils/mitt';
+  import { isBoolean, isObject } from '@project/utils/is';
+  import { mitt } from '@project/utils/mitt';
 
   defineOptions({ name: 'SubMenu' });
 

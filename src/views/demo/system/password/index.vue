@@ -10,8 +10,8 @@
   </PageWrapper>
 </template>
 <script lang="ts" setup>
-  import { PageWrapper } from '@/components/Page';
-  import { BasicForm, useForm } from '@/components/Form';
+  import { PageWrapper } from '@project/components/Page';
+  import { BasicForm, useForm } from '@project/components/Form';
 
   import { formSchema } from './pwd.data';
 

@@ -11,8 +11,8 @@
 <script lang="ts" setup>
   import { PropType } from 'vue';
   import CountButton from './CountButton.vue';
-  import { useDesign } from '@/hooks/web/useDesign';
-  import { useRuleFormItem } from '@/hooks/component/useFormItem';
+  import { useDesign } from '@project/hooks/web/useDesign';
+  import { useRuleFormItem } from '@project/hooks/component/useFormItem';
 
   defineOptions({ name: 'CountDownInput', inheritAttrs: false });
 

@@ -10,11 +10,11 @@
 </template>
 
 <script lang="ts" setup>
-  import { BasicTable } from '@/components/Table';
-  import { aoaToSheetXlsx } from '@/components/Excel';
+  import { BasicTable } from '@project/components/Table';
+  import { aoaToSheetXlsx } from '@project/components/Excel';
   import { arrHeader, arrData, columns, data } from './data';
-  import { PageWrapper } from '@/components/Page';
-  import { aoaToMultipleSheetXlsx } from '@/components/Excel/src/Export2Excel';
+  import { PageWrapper } from '@project/components/Page';
+  import { aoaToMultipleSheetXlsx } from '@project/components/Excel/src/Export2Excel';
 
   function aoaToExcel() {
     // 保证data顺序与header一致

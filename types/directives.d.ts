@@ -1,5 +1,5 @@
 import type { Directive } from 'vue';
-import { RoleEnum } from '@/enums/roleEnum';
+import { RoleEnum } from '@project/enums/roleEnum';
 
 declare module 'vue' {
   export interface ComponentCustomProperties {

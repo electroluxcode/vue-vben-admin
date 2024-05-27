@@ -1,7 +1,7 @@
 import { getCurrentInstance, onBeforeUnmount, ref, Ref, shallowRef, unref } from 'vue';
-import { useRafThrottle } from '@/utils/domUtils';
-import { addResizeListener, removeResizeListener } from '@/utils/event';
-import { isDef } from '@/utils/is';
+import { useRafThrottle } from '@project/utils/domUtils';
+import { addResizeListener, removeResizeListener } from '@project/utils/event';
+import { isDef } from '@project/utils/is';
 
 const watermarkSymbol = 'watermark-dom';
 const updateWatermarkText = ref<string | null>(null);

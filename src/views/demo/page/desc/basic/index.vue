@@ -25,9 +25,9 @@
   </PageWrapper>
 </template>
 <script lang="ts" setup>
-  import { Description } from '@/components/Description';
-  import { BasicTable, useTable } from '@/components/Table';
-  import { PageWrapper } from '@/components/Page';
+  import { Description } from '@project/components/Description';
+  import { BasicTable, useTable } from '@project/components/Table';
+  import { PageWrapper } from '@project/components/Page';
   import { Divider } from 'ant-design-vue';
 
   import {

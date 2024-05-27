@@ -1,4 +1,4 @@
-import { FormSchema } from '@/components/Form';
+import { FormSchema } from '@project/components/Form';
 
 const colProps = {
   span: 8,

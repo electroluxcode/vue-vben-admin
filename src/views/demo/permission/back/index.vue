@@ -24,11 +24,11 @@
 </template>
 <script lang="ts" setup>
   import { computed } from 'vue';
-  import { usePermission } from '@/hooks/web/usePermission';
-  import { useUserStore } from '@/store/modules/user';
-  import { PageWrapper } from '@/components/Page';
-  import { PermissionModeEnum } from '@/enums/appEnum';
-  import { useAppStore } from '@/store/modules/app';
+  import { usePermission } from '@project/hooks/web/usePermission';
+  import { useUserStore } from '@project/store/modules/user';
+  import { PageWrapper } from '@project/components/Page';
+  import { PermissionModeEnum } from '@project/enums/appEnum';
+  import { useAppStore } from '@project/store/modules/app';
   import { Alert, Space } from 'ant-design-vue';
   import CurrentPermissionMode from '../CurrentPermissionMode.vue';
 

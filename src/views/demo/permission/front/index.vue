@@ -28,10 +28,10 @@
 <script lang="ts" setup>
   import { computed } from 'vue';
   import { Alert, Space } from 'ant-design-vue';
-  import { useUserStore } from '@/store/modules/user';
-  import { RoleEnum } from '@/enums/roleEnum';
-  import { usePermission } from '@/hooks/web/usePermission';
-  import { PageWrapper } from '@/components/Page';
+  import { useUserStore } from '@project/store/modules/user';
+  import { RoleEnum } from '@project/enums/roleEnum';
+  import { usePermission } from '@project/hooks/web/usePermission';
+  import { PageWrapper } from '@project/components/Page';
   import CurrentPermissionMode from '../CurrentPermissionMode.vue';
 
   const { changeRole } = usePermission();

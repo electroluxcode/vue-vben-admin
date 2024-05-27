@@ -42,8 +42,8 @@
   </PageWrapper>
 </template>
 <script lang="ts" setup>
-  import { PageWrapper } from '@/components/Page';
-  import { VScroll } from '@/components/VirtualScroll';
+  import { PageWrapper } from '@project/components/Page';
+  import { VScroll } from '@project/components/VirtualScroll';
   import { Divider, InputNumber } from 'ant-design-vue';
   import { ref } from 'vue';
 

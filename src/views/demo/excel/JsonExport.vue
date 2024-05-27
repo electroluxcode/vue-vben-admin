@@ -11,11 +11,11 @@
 </template>
 
 <script lang="ts" setup>
-  import { BasicTable } from '@/components/Table';
-  import { jsonToSheetXlsx } from '@/components/Excel';
+  import { BasicTable } from '@project/components/Table';
+  import { jsonToSheetXlsx } from '@project/components/Excel';
   import { columns, data } from './data';
-  import { PageWrapper } from '@/components/Page';
-  import { jsonToMultipleSheetXlsx } from '@/components/Excel/src/Export2Excel';
+  import { PageWrapper } from '@project/components/Page';
+  import { jsonToMultipleSheetXlsx } from '@project/components/Excel/src/Export2Excel';
 
   function defaultHeader() {
     // 默认Object.keys(data[0])作为header

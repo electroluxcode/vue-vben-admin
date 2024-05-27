@@ -20,10 +20,10 @@
   </div>
 </template>
 <script lang="ts" setup>
-  import { BasicTable, ColumnChangeParam, useTable } from '@/components/Table';
+  import { BasicTable, ColumnChangeParam, useTable } from '@project/components/Table';
   import { getBasicColumns, getBasicShortColumns } from './tableData';
-  import { useMessage } from '@/hooks/web/useMessage';
-  import { demoListApi } from '@/api/demo/table';
+  import { useMessage } from '@project/hooks/web/useMessage';
+  import { demoListApi } from '@project/api/demo/table';
 
   const { createMessage } = useMessage();
   function onChange() {

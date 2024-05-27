@@ -26,14 +26,14 @@
 </template>
 <script lang="ts" setup>
   import { computed } from 'vue';
-  import { useI18n } from '@/hooks/web/useI18n';
-  import { useDesign } from '@/hooks/web/useDesign';
-  import { BasicModal, useModalInner } from '@/components/Modal';
-  import { BasicForm, useForm } from '@/components/Form';
+  import { useI18n } from '@project/hooks/web/useI18n';
+  import { useDesign } from '@project/hooks/web/useDesign';
+  import { BasicModal, useModalInner } from '@project/components/Modal';
+  import { BasicForm, useForm } from '@project/components/Form';
 
-  import { useUserStore } from '@/store/modules/user';
-  import { useLockStore } from '@/store/modules/lock';
-  import headerImg from '@/assets/images/header.jpg';
+  import { useUserStore } from '@project/store/modules/user';
+  import { useLockStore } from '@project/store/modules/lock';
+  import headerImg from '@project/assets/images/header.jpg';
 
   defineOptions({ name: 'LockModal' });
 

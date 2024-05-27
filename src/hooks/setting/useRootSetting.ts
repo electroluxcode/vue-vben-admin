@@ -1,9 +1,9 @@
-import type { ProjectConfig } from '#/config';
+import type { ProjectConfig } from '@projectType/config';
 
 import { computed } from 'vue';
 
-import { useAppStore } from '@/store/modules/app';
-import { ContentEnum, ThemeEnum } from '@/enums/appEnum';
+import { useAppStore } from '@project/store/modules/app';
+import { ContentEnum, ThemeEnum } from '@project/enums/appEnum';
 
 type RootSetting = Omit<
   ProjectConfig,

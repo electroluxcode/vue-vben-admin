@@ -1,6 +1,6 @@
-import type { AppRouteModule } from '@/router/types';
+import type { AppRouteModule } from '@project/router/types';
 
-import { LAYOUT } from '@/router/constant';
+import { LAYOUT } from '@project/router/constant';
 
 const permission: AppRouteModule = {
   path: '/form-designer',
@@ -18,7 +18,7 @@ const permission: AppRouteModule = {
       meta: {
         title: '表单设计',
       },
-      component: () => import('@/views/form-design/index.vue'),
+      component: () => import('@project/views/form-design/index.vue'),
     },
     {
       path: 'example1',
@@ -26,7 +26,7 @@ const permission: AppRouteModule = {
       meta: {
         title: '示例',
       },
-      component: () => import('@/views/form-design/examples/baseForm.vue'),
+      component: () => import('@project/views/form-design/examples/baseForm.vue'),
     },
   ],
 };

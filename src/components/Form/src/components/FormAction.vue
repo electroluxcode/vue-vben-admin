@@ -43,11 +43,11 @@
   import type { ColEx } from '../types';
   import { computed, PropType } from 'vue';
   import { Form, Col } from 'ant-design-vue';
-  import { Button, ButtonProps } from '@/components/Button';
-  import { BasicArrow } from '@/components/Basic';
+  import { Button, ButtonProps } from '@project/components/Button';
+  import { BasicArrow } from '@project/components/Basic';
   import { useFormContext } from '../hooks/useFormContext';
-  import { useI18n } from '@/hooks/web/useI18n';
-  import { propTypes } from '@/utils/propTypes';
+  import { useI18n } from '@project/hooks/web/useI18n';
+  import { propTypes } from '@project/utils/propTypes';
 
   defineOptions({ name: 'BasicFormAction' });
 

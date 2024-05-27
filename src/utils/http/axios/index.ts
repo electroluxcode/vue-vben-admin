@@ -3,21 +3,21 @@
 
 import type { AxiosInstance, AxiosResponse } from 'axios';
 import { clone } from 'lodash-es';
-import type { RequestOptions, Result } from '#/axios';
+import type { RequestOptions, Result } from '@projectType/axios';
 import type { AxiosTransform, CreateAxiosOptions } from './axiosTransform';
 import { VAxios } from './Axios';
 import { checkStatus } from './checkStatus';
-import { useGlobSetting } from '@/hooks/setting';
-import { useMessage } from '@/hooks/web/useMessage';
-import { RequestEnum, ResultEnum, ContentTypeEnum } from '@/enums/httpEnum';
-import { isString, isUndefined, isNull, isEmpty } from '@/utils/is';
-import { getToken } from '@/utils/auth';
-import { setObjToUrlParams, deepMerge } from '@/utils';
-import { useErrorLogStoreWithOut } from '@/store/modules/errorLog';
-import { useI18n } from '@/hooks/web/useI18n';
+import { useGlobSetting } from '@project/hooks/setting';
+import { useMessage } from '@project/hooks/web/useMessage';
+import { RequestEnum, ResultEnum, ContentTypeEnum } from '@project/enums/httpEnum';
+import { isString, isUndefined, isNull, isEmpty } from '@project/utils/is';
+import { getToken } from '@project/utils/auth';
+import { setObjToUrlParams, deepMerge } from '@project/utils';
+import { useErrorLogStoreWithOut } from '@project/store/modules/errorLog';
+import { useI18n } from '@project/hooks/web/useI18n';
 import { joinTimestamp, formatRequestDate } from './helper';
-import { useUserStoreWithOut } from '@/store/modules/user';
-import { AxiosRetry } from '@/utils/http/axios/axiosRetry';
+import { useUserStoreWithOut } from '@project/store/modules/user';
+import { AxiosRetry } from '@project/utils/http/axios/axiosRetry';
 import axios from 'axios';
 
 const globSetting = useGlobSetting();

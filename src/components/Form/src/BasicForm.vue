@@ -48,22 +48,22 @@
   import FormAction from './components/FormAction.vue';
 
   import { dateItemType, isIncludeSimpleComponents } from './helper';
-  import { dateUtil } from '@/utils/dateUtil';
+  import { dateUtil } from '@project/utils/dateUtil';
 
-  import { deepMerge } from '@/utils';
+  import { deepMerge } from '@project/utils';
 
   import { useFormValues } from './hooks/useFormValues';
   import useAdvanced from './hooks/useAdvanced';
   import { useFormEvents } from './hooks/useFormEvents';
   import { createFormContext } from './hooks/useFormContext';
   import { useAutoFocus } from './hooks/useAutoFocus';
-  import { useModalContext } from '@/components/Modal';
+  import { useModalContext } from '@project/components/Modal';
   import { useDebounceFn } from '@vueuse/core';
 
   import { basicProps } from './props';
-  import { useDesign } from '@/hooks/web/useDesign';
+  import { useDesign } from '@project/hooks/web/useDesign';
   import { cloneDeep } from 'lodash-es';
-  import { TableActionType } from '@/components/Table';
+  import { TableActionType } from '@project/components/Table';
 
   defineOptions({ name: 'BasicForm' });
 

@@ -16,9 +16,9 @@
   </PageWrapper>
 </template>
 <script lang="ts" setup>
-  import { BasicForm, FormSchema, useForm } from '@/components/Form';
-  import { CollapseContainer } from '@/components/Container';
-  import { PageWrapper } from '@/components/Page';
+  import { BasicForm, FormSchema, useForm } from '@project/components/Form';
+  import { CollapseContainer } from '@project/components/Container';
+  import { PageWrapper } from '@project/components/Page';
 
   const schemas: FormSchema[] = [
     {

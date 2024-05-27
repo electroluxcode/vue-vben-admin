@@ -7,9 +7,9 @@
 </template>
 <script lang="ts" setup>
   import { computed } from 'vue';
-  import Icon from '@/components/Icon/Icon.vue';
-  import { useI18n } from '@/hooks/web/useI18n';
-  import { useDesign } from '@/hooks/web/useDesign';
+  import Icon from '@project/components/Icon/Icon.vue';
+  import { useI18n } from '@project/hooks/web/useI18n';
+  import { useDesign } from '@project/hooks/web/useDesign';
   import { contentProps } from '../props';
 
   defineOptions({ name: 'MenuItemContent' });

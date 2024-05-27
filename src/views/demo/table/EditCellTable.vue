@@ -10,12 +10,12 @@
 </template>
 <script lang="ts" setup>
   import { h } from 'vue';
-  import { BasicTable, useTable, BasicColumn } from '@/components/Table';
-  import { optionsListApi } from '@/api/demo/select';
+  import { BasicTable, useTable, BasicColumn } from '@project/components/Table';
+  import { optionsListApi } from '@project/api/demo/select';
 
-  import { demoListApi } from '@/api/demo/table';
-  import { treeOptionsListApi } from '@/api/demo/tree';
-  import { useMessage } from '@/hooks/web/useMessage';
+  import { demoListApi } from '@project/api/demo/table';
+  import { treeOptionsListApi } from '@project/api/demo/tree';
+  import { useMessage } from '@project/hooks/web/useMessage';
   import { Progress } from 'ant-design-vue';
 
   const columns: BasicColumn[] = [

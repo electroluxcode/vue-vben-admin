@@ -18,13 +18,13 @@
     BasicColumn,
     ActionItem,
     EditRecordRow,
-  } from '@/components/Table';
-  import { optionsListApi } from '@/api/demo/select';
+  } from '@project/components/Table';
+  import { optionsListApi } from '@project/api/demo/select';
 
-  import { demoListApi } from '@/api/demo/table';
-  import { treeOptionsListApi } from '@/api/demo/tree';
+  import { demoListApi } from '@project/api/demo/table';
+  import { treeOptionsListApi } from '@project/api/demo/tree';
   import { cloneDeep } from 'lodash-es';
-  import { useMessage } from '@/hooks/web/useMessage';
+  import { useMessage } from '@project/hooks/web/useMessage';
 
   const columns: BasicColumn[] = [
     {

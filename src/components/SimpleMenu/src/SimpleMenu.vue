@@ -19,18 +19,18 @@
 </template>
 <script lang="ts" setup>
   import type { MenuState } from './types';
-  import type { Menu as MenuType } from '@/router/types';
+  import type { Menu as MenuType } from '@project/router/types';
   import type { RouteLocationNormalizedLoaded } from 'vue-router';
   import { computed, ref, unref, reactive, toRefs, watch, PropType, useAttrs } from 'vue';
-  import { useDesign } from '@/hooks/web/useDesign';
+  import { useDesign } from '@project/hooks/web/useDesign';
   import Menu from './components/Menu.vue';
   import SimpleSubMenu from './SimpleSubMenu.vue';
-  import { listenerRouteChange } from '@/logics/mitt/routeChange';
-  import { propTypes } from '@/utils/propTypes';
-  import { REDIRECT_NAME } from '@/router/constant';
+  import { listenerRouteChange } from '@project/logics/mitt/routeChange';
+  import { propTypes } from '@project/utils/propTypes';
+  import { REDIRECT_NAME } from '@project/router/constant';
   import { useRouter } from 'vue-router';
-  import { isFunction, isHttpUrl } from '@/utils/is';
-  import { openWindow } from '@/utils';
+  import { isFunction, isHttpUrl } from '@project/utils/is';
+  import { openWindow } from '@project/utils';
   import { useOpenKeys } from './useOpenKeys';
 
   defineOptions({ name: 'SimpleMenu', inheritAttrs: false });

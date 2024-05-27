@@ -1,7 +1,7 @@
-import type { AppRouteModule } from '@/router/types';
+import type { AppRouteModule } from '@project/router/types';
 
-import { LAYOUT } from '@/router/constant';
-import { t } from '@/hooks/web/useI18n';
+import { LAYOUT } from '@project/router/constant';
+import { t } from '@project/hooks/web/useI18n';
 
 const flow: AppRouteModule = {
   path: '/flow',
@@ -17,7 +17,7 @@ const flow: AppRouteModule = {
     {
       path: 'flowChart',
       name: 'flowChartDemo',
-      component: () => import('@/views/demo/comp/flow-chart/index.vue'),
+      component: () => import('@project/views/demo/comp/flow-chart/index.vue'),
       meta: {
         title: t('routes.demo.flow.flowChart'),
       },

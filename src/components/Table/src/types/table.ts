@@ -1,6 +1,6 @@
 import type { VNodeChild } from 'vue';
 import type { PaginationProps } from './pagination';
-import type { FormProps } from '@/components/Form';
+import type { FormProps } from '@project/components/Form';
 import type {
   TableRowSelection as ITableRowSelection,
   Key,
@@ -9,8 +9,8 @@ import type {
 import type { ColumnProps } from 'ant-design-vue/lib/table';
 
 import { ComponentType } from './componentType';
-import { VueNode } from '@/utils/propTypes';
-import { RoleEnum } from '@/enums/roleEnum';
+import { VueNode } from '@project/utils/propTypes';
+import { RoleEnum } from '@project/enums/roleEnum';
 import { FixedType } from 'ant-design-vue/es/vc-table/interface';
 
 import AntDesignVueTable from 'ant-design-vue/es/table';

@@ -27,9 +27,9 @@
     watch,
     type PropType,
   } from 'vue';
-  import type { StyleValue } from '@/utils/types';
-  import { addResizeListener, removeResizeListener } from '@/utils/event';
-  import componentSetting from '@/settings/componentSetting';
+  import type { StyleValue } from '@project/utils/types';
+  import { addResizeListener, removeResizeListener } from '@project/utils/event';
+  import componentSetting from '@project/settings/componentSetting';
   import Bar from './bar';
 
   defineOptions({ name: 'Scrollbar' });

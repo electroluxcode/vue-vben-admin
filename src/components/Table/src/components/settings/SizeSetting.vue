@@ -27,11 +27,11 @@
   import { ref, onMounted } from 'vue';
   import { Tooltip, Dropdown, Menu, type MenuProps } from 'ant-design-vue';
   import { ColumnHeightOutlined } from '@ant-design/icons-vue';
-  import { useI18n } from '@/hooks/web/useI18n';
+  import { useI18n } from '@project/hooks/web/useI18n';
   import { useTableContext } from '../../hooks/useTableContext';
-  import { getPopupContainer } from '@/utils';
+  import { getPopupContainer } from '@project/utils';
 
-  import { useTableSettingStore } from '@/store/modules/tableSetting';
+  import { useTableSettingStore } from '@project/store/modules/tableSetting';
 
   const tableSettingStore = useTableSettingStore();
 
